@@ -1,32 +1,227 @@
-# Fotoyu Resize — rilis
+<div align="center">
 
-Repo ini **hanya berisi berkas rilis** aplikasi Fotoyu Resize. Source
-code-nya ada di repo terpisah yang private.
+<img src="img/icon.png" width="96" alt="Fotolane">
 
-Kenapa dipisah: fitur auto-update di dalam app mengambil manifest rilis
-**tanpa autentikasi**, dan aset rilis GitHub mewarisi visibilitas repo-nya.
-Menaruh rilis di repo private berarti app tidak bisa mengunduhnya sama
-sekali; menyelipkan token ke dalam app bukan jalan keluar, karena app yang
-dibagikan bisa dibongkar siapa saja.
+# Fotolane
 
-## Unduhan
+**Penyiap foto acara otomatis** — oleh Labstory Studio
 
-Ambil berkas untuk platformmu dari
-[rilis terbaru](../../releases/latest):
+Ribuan foto acara siap unggah tanpa perlu ditunggui.
 
-| Berkas | Platform |
-|---|---|
-| `FotoyuResize-<versi>-arm64.apk` | Android (tablet/HP arm64) |
-| `FotoyuResize-<versi>.dmg` | macOS |
-| `FotoyuResize-Setup-<versi>.exe` | Windows |
-| `latest.json` | dibaca app untuk mengecek update — bukan untuk diunduh manual |
+Android · macOS · Windows
 
-## Verifikasi berkas
+[Instagram @labstory.studio](https://www.instagram.com/labstory.studio/)
 
-`latest.json` memuat sha256 tiap berkas. App memverifikasinya sendiri
-sebelum menawarkan pemasangan; untuk memeriksa manual:
+</div>
 
-```bash
-shasum -a 256 FotoyuResize-<versi>-arm64.apk    # macOS / Linux
-certutil -hashfile FotoyuResize-Setup-<versi>.exe SHA256   # Windows
+---
+
+Foto langsung dari kamera ukurannya puluhan MB — terlalu besar untuk diunggah,
+dan harus dipecah per 2000 foto per folder. Mengerjakannya manual setelah acara
+bisa memakan berjam-jam.
+
+Fotolane mengerjakan itu sendiri. **1000 foto yang tadinya perlu sekitar
+28 menit selesai dalam sekitar 41 detik** (diukur di Mac Apple Silicon; di HP
+dan Windows tetap jauh lebih cepat daripada manual).
+
+Foto aslimu **tidak pernah diubah atau dihapus** — hasilnya selalu ditulis ke
+folder baru di sampingnya.
+
+---
+
+## 1. Auto Resize — jalan sendiri selama acara
+
+<img src="img/auto-resize.png" width="620" alt="Tab Auto Resize">
+
+Pilih folder, tekan **Mulai mengawasi**, lalu biarkan. Setiap foto baru yang masuk
+langsung diperkecil dan dipisah ke folder `ganjil` dan `genap`.
+
+- Bisa mengawasi **folder tanggal hari ini** di dalam folder pilihanmu, atau
+  **langsung folder itu sendiri**.
+- Setelah **2000 foto**, folder lanjutan dibuat otomatis: `ganjil-2`,
+  `ganjil-3`, dan seterusnya.
+- Hanya foto yang **masuk setelah tombol Mulai ditekan** yang diproses. Foto
+  lama yang sudah ada di folder itu dilewati.
+- Foto yang masih separuh tersalin dari kamera **ditunggu sampai selesai**,
+  jadi tidak ada hasil yang rusak setengah jadi.
+- **Layar boleh dimatikan** — prosesnya tetap jalan.
+
+### Kamera USB — langsung dari kamera
+
+Pilih sumber **Kamera USB**, colok kamera dengan kabel, tekan **Mulai mengawasi**, lalu
+memotret seperti biasa. Setiap jepretan langsung masuk lewat kabel, diperkecil,
+dan dipisah ke `ganjil` / `genap`.
+
+- Foto asli disimpan di folder `Foto Asli`; hasilnya di folder tanggal hari
+  ini, yang berganti sendiri lewat tengah malam.
+- Nama file mengikuti nomor kamera, dan kartu memori tetap menyimpan salinan.
+- Hanya JPEG yang diambil; RAW tetap di kartu.
+- Kabel tercabut? Fotolane menyambung lagi sendiri, dan foto yang dijepret
+  selagi kabel lepas ikut diambil.
+- **macOS:** LUMIX (diuji dengan LUMIX S5IIX), Nikon, Canon, Sony, Fujifilm.
+  **Android:** LUMIX (diuji di tablet) dan Nikon, dengan kabel USB-C pendek
+  (maksimal 1 m). Belum tersedia di Windows.
+- Tekan **Berhenti** sebelum mencabut kabel.
+
+## 2. Foto — proses sekaligus
+
+<img src="img/foto.png" width="620" alt="Tab Foto">
+
+Untuk foto yang sudah terkumpul. Pilih satu file atau satu folder, tekan
+**Proses foto**, selesai. Pemisahan ganjil/genap juga tersedia di sini.
+
+Setelah selesai, ringkasan menunjukkan berapa foto yang berhasil dan berapa
+ruang yang dihemat. Kalau ada file yang gagal (misalnya rusak), cukup tekan
+**Coba lagi** — hanya file itu yang diproses ulang.
+
+## 3. Video
+
+<img src="img/video.png" width="620" alt="Tab Video">
+
+- **Potong & perkecil** — ambil beberapa detik pertama, dijamin di bawah batas
+  ukuran (bawaan: 3 detik, 720p, di bawah 15 MB).
+- **Ubah ke MP4** — video utuh, kualitas asli dipertahankan, di bawah 85 MB.
+
+## Hal kecil yang memudahkan
+
+- **Seret & lepas** file atau folder langsung ke jendela app (Mac & Windows).
+- **Notifikasi saat selesai**, lengkap dengan suara — bisa dimatikan di
+  Pengaturan.
+- **Mode gelap** dan pilihan **bahasa Indonesia / English**, langsung dari
+  bagian atas layar.
+
+---
+
+## Struktur folder hasil
+
+Dengan **Auto Resize**, hasil ditulis di dalam folder sumbernya:
+
 ```
+Folder Acara/
+└── 2026-09-23/              ← folder tanggal (dipilih otomatis)
+    ├── DSC_0011.jpg         ← foto asli, tidak disentuh
+    ├── DSC_0012.jpg
+    ├── ganjil/              ← maks 2000 foto
+    │   ├── DSC_0011.jpg
+    │   └── DSC_0013.jpg
+    ├── ganjil-2/            ← dibuat otomatis saat "ganjil" penuh
+    └── genap/
+        ├── DSC_0012.jpg
+        └── DSC_0014.jpg
+```
+
+Dengan tab **Foto**, hasil masuk ke folder `resize/` di samping foto sumber:
+
+```
+Folder Foto/
+├── DSC_0011.jpg
+└── resize/
+    ├── ganjil/
+    └── genap/
+```
+
+Ganjil atau genap ditentukan dari **angka terakhir pada nama file**, bukan dari
+urutan. Jadi hasilnya tidak berubah walau isi folder bertambah.
+
+---
+
+## Unduh
+
+Ambil versi terbaru di **[halaman Releases](../../releases/latest)**, lalu
+pilih satu berkas sesuai perangkatmu:
+
+| Perangkat | Berkas yang diunduh | Syarat |
+|---|---|---|
+| HP / tablet **Android** | `Fotolane-…-arm64.apk` | Android 7.0 ke atas, 64-bit |
+| **Mac** | `Fotolane-….dmg` | macOS 12 ke atas |
+| **Windows** | `Fotolane-Setup-….exe` | Windows 10 / 11, 64-bit |
+
+### Catatan pemasangan
+
+**Android** — karena tidak lewat Play Store, Android akan bertanya sekali soal
+"instal dari sumber ini"; izinkan. Saat pertama dipakai, app meminta izin
+**"Akses semua file"**. Izin itu dipakai untuk membaca folder fotomu dan
+menulis folder hasil di sebelahnya — tanpa itu app tidak bisa menyimpan hasil
+di tempat yang kamu pilih. App tidak mengirim apa pun ke mana pun.
+
+**Mac** — kalau muncul peringatan bahwa app tidak bisa dibuka, klik kanan ikon
+app lalu pilih **Buka**.
+
+**Windows** — kalau muncul layar biru SmartScreen, klik **Info selengkapnya →
+Tetap jalankan**.
+
+---
+
+## Harga
+
+| | |
+|---|---|
+| Tab **Foto** & **Video** | Gratis selamanya |
+| **Auto Resize** | Gratis untuk **500 foto pertama** |
+| Lisensi penuh | **Rp 149.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk semua update |
+
+Cara membeli, semuanya dari dalam app:
+
+1. Tekan **Aktifkan** di bagian atas layar.
+2. Bayar lewat **QRIS** (merchant *LABSTORY - SMRG*) dengan nominal yang
+   tertera — tiga digit terakhirnya penanda pembayaranmu.
+3. Tekan **Kirim via WhatsApp**. Pesannya sudah terisi, tinggal kirim.
+4. Kami membalas dengan kunci. Tempel di app, tekan **Aktifkan** — selesai.
+
+Untuk perangkat kedua, buka **Aktifkan** di perangkat itu dan tekan
+*"Sudah beli? Minta kunci untuk perangkat ini"*.
+
+---
+
+## Update otomatis
+
+Cukup pasang sekali. App memeriksa sendiri apakah ada versi baru, lalu
+menawarkannya lewat kotak di tengah layar — tinggal klik Unduh. Tidak perlu
+kembali ke halaman ini lagi.
+
+---
+
+## Pertanyaan yang sering muncul
+
+**Foto asli saya aman?**
+Aman. App hanya membaca foto asli dan menulis hasilnya ke folder baru. Tidak
+ada yang ditimpa atau dihapus.
+
+**Seberapa kecil hasilnya?**
+Bawaannya sisi terpanjang 1441 piksel dengan kualitas 92 — foto kamera biasanya
+jadi beberapa ratus KB. Angka ini bisa diubah di **Pengaturan**.
+
+**Ada foto yang ukurannya tidak berubah, kenapa?**
+Berarti foto itu sudah lebih kecil dari batas. App tidak pernah memperbesar
+foto, dan meng-encode ulang justru bisa membuat berkasnya lebih besar — jadi
+foto seperti itu disalin apa adanya.
+
+**Format apa saja yang didukung?**
+JPG, JPEG, PNG, WebP, BMP, dan TIFF. **HEIC belum didukung** — kalau kameramu
+atau iPhone menyimpan dalam HEIC, ubah dulu setelannya ke JPEG.
+
+**Metadata foto ikut hilang?**
+Tidak. Informasi kamera dan orientasi foto tetap terjaga.
+
+**Perlu internet?**
+Tidak. Semua diproses di perangkatmu sendiri. Internet hanya dipakai saat
+memeriksa pembaruan.
+
+**Auto Resize boros baterai?**
+Selama mengawasi, app menjaga prosesor tetap aktif supaya tidak berhenti saat
+layar mati — perkiraan beberapa persen baterai per hari. Yang jauh lebih boros
+adalah layar yang dibiarkan menyala, jadi pilihan itu sengaja dimatikan secara
+bawaan.
+
+---
+
+<div align="center">
+
+Dibuat oleh **Labstory Studio Semarang**
+
+[Instagram @labstory.studio](https://www.instagram.com/labstory.studio/)
+
+<sub>Aplikasi ini dibuat mandiri oleh sesama fotografer dan tidak berafiliasi
+dengan, atau didukung secara resmi oleh, platform mana pun.</sub>
+
+</div>
