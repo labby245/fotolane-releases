@@ -174,7 +174,8 @@ Tetap jalankan**.
 |---|---|
 | Tab **Foto** & **Video** | Gratis selamanya |
 | **Auto Resize** | Gratis untuk **500 foto pertama** |
-| Lisensi penuh | **Rp 400.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk semua update |
+| Lisensi penuh | **Rp 400.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk **update 1 tahun** |
+| Perpanjangan update | **Rp 150.000 per tahun**, opsional. Tanpa perpanjangan, versi yang sudah kamu punya tetap jalan selamanya |
 
 Cara membeli, semuanya dari dalam app:
 
@@ -186,6 +187,12 @@ Cara membeli, semuanya dari dalam app:
 
 Untuk perangkat kedua, buka **Aktifkan** di perangkat itu dan tekan
 *"Sudah beli? Minta kunci untuk perangkat ini"*.
+
+Lisensi berlaku untuk semua versi yang rilis sampai setahun sesudah kamu
+membeli. Sebelum menawarkan update ke versi di luar masa itu, app memberi
+tahu dulu. Perpanjang dari **Pengaturan → Perpanjang update**; satu
+pembayaran memperpanjang kedua perangkatmu. Lisensi yang dibeli sebelum
+13 Oktober 2026 tetap mendapat semua update.
 
 ---
 

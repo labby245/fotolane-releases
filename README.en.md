@@ -175,7 +175,8 @@ choose **Open**.
 |---|---|
 | **Photos** & **Video** tabs | Free forever |
 | **Auto Resize** | Free for the **first 500 photos** |
-| Full license | **Rp 400,000, one-time**, for **2 devices** (e.g. a laptop + a phone/tablet), all updates included |
+| Full license | **Rp 400,000, one-time**, for **2 devices** (e.g. a laptop + a phone/tablet), including **1 year of updates** |
+| Update renewal | **Rp 150,000 per year**, optional. Without it, the version you have keeps working forever |
 
 How to buy, all from inside the app:
 
@@ -187,6 +188,11 @@ How to buy, all from inside the app:
 
 For a second device, open **Activate** on that device and tap *"Already
 bought? Request a key for this device"*.
+
+A license covers every version released up to one year after you buy. Before
+offering an update outside that window, the app tells you first. Renew from
+**Settings → Renew updates**; one payment renews both of your devices.
+Licenses bought before 13 October 2026 keep getting every update.
 
 ---
 
