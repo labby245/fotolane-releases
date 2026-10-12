@@ -174,7 +174,7 @@ Tetap jalankan**.
 |---|---|
 | Tab **Foto** & **Video** | Gratis selamanya |
 | **Auto Resize** | Gratis untuk **500 foto pertama** |
-| Lisensi penuh | **Rp 149.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk semua update |
+| Lisensi penuh | **Rp 400.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk semua update |
 
 Cara membeli, semuanya dari dalam app:
 

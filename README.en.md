@@ -175,7 +175,7 @@ choose **Open**.
 |---|---|
 | **Photos** & **Video** tabs | Free forever |
 | **Auto Resize** | Free for the **first 500 photos** |
-| Full license | **Rp 149,000, one-time**, for **2 devices** (e.g. a laptop + a phone/tablet), all updates included |
+| Full license | **Rp 400,000, one-time**, for **2 devices** (e.g. a laptop + a phone/tablet), all updates included |
 
 How to buy, all from inside the app:
 
