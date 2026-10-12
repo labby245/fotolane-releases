@@ -26,8 +26,9 @@ Fotolane does it for you. **1000 photos that used to take about 28 minutes are
 done in about 41 seconds** (measured on an Apple Silicon Mac; still far faster
 than manual work on phones and Windows).
 
-Your original photos are **never modified or deleted** — results always go into
-a new folder beside them.
+Your original photos are **never modified or deleted**: results always go into
+a new folder beside them. The only exception is the USB camera option "Keep
+original photos" when you switch it off yourself (see below).
 
 ---
 
@@ -56,13 +57,27 @@ split into `ganjil` / `genap`.
 
 - Originals go into a `Foto Asli` folder; the results go into today's date
   folder, which switches by itself at midnight.
-- File names follow the camera's numbering, and the memory card keeps a copy.
-- Only JPEG is taken; RAW stays on the card.
+- File names follow the camera's numbering, and the memory card keeps a copy
+  (when the camera saves to its card).
+- Only JPEG is taken; RAW stays on the card. Sony over PC Remote: set "RAW+J
+  PC Save Image" to JPEG only (if the menu has it), otherwise the RAW also
+  crosses the cable and is dropped.
 - Cable pulled? Fotolane reconnects by itself, and shots taken while it was
-  out are picked up too.
-- **macOS:** LUMIX (tested with a LUMIX S5IIX), Nikon, Canon, Sony, Fujifilm.
-  **Android:** LUMIX (tested on a tablet) and Nikon, with a short USB-C cable
-  (1 m at most). Not available on Windows yet.
+  out are picked up too. The exceptions are Fujifilm and Sony over PC Remote:
+  those shots are not picked up, and are only on the card if the camera saves
+  to its card.
+- **Keep original photos on this device**: switch it off to keep only the
+  results (in `ganjil` / `genap`). An original is deleted only once its result
+  exists **and** the camera keeps a copy on its card. Cardless shots
+  (PC000001…) and photos that fail to process are never deleted.
+- **macOS:** LUMIX, Canon, Nikon, Sony, Fujifilm (older Sony bodies such as
+  the a7 III, a9, a6000–a6600 over PC Remote mode).
+  **Windows:** LUMIX, Canon, Nikon, Sony (PC Remote mode), Fujifilm.
+  Fotolane installs no drivers.
+  **Android:** LUMIX, Canon, Nikon, Sony (PC Remote mode), with a short USB-C
+  cable (1 m at most).
+- LUMIX (S5IIX) and Canon (EOS R50 V) are tested with real cameras on macOS,
+  Windows and Android; the other brands are not yet.
 - Press **Stop** before unplugging the cable.
 
 ## 2. Photos — process a batch at once

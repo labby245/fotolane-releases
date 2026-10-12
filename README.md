@@ -24,8 +24,9 @@ Fotolane mengerjakan itu sendiri. **1000 foto yang tadinya perlu sekitar
 28 menit selesai dalam sekitar 41 detik** (diukur di Mac Apple Silicon; di HP
 dan Windows tetap jauh lebih cepat daripada manual).
 
-Foto aslimu **tidak pernah diubah atau dihapus** — hasilnya selalu ditulis ke
-folder baru di sampingnya.
+Foto aslimu **tidak pernah diubah atau dihapus**: hasilnya selalu ditulis ke
+folder baru di sampingnya. Satu-satunya pengecualian adalah opsi Kamera USB
+"Simpan foto asli" kalau kamu matikan sendiri (lihat di bawah).
 
 ---
 
@@ -54,13 +55,28 @@ dan dipisah ke `ganjil` / `genap`.
 
 - Foto asli disimpan di folder `Foto Asli`; hasilnya di folder tanggal hari
   ini, yang berganti sendiri lewat tengah malam.
-- Nama file mengikuti nomor kamera, dan kartu memori tetap menyimpan salinan.
-- Hanya JPEG yang diambil; RAW tetap di kartu.
+- Nama file mengikuti nomor kamera, dan kartu memori tetap menyimpan salinan
+  (kalau kamera menyimpan ke kartu).
+- Hanya JPEG yang diambil; RAW tetap di kartu. Sony lewat PC Remote: atur
+  "RAW+J PC Save Image" ke JPEG saja (kalau ada di menunya), kalau tidak
+  RAW ikut terkirim lewat kabel lalu dibuang.
 - Kabel tercabut? Fotolane menyambung lagi sendiri, dan foto yang dijepret
-  selagi kabel lepas ikut diambil.
-- **macOS:** LUMIX (diuji dengan LUMIX S5IIX), Nikon, Canon, Sony, Fujifilm.
-  **Android:** LUMIX (diuji di tablet) dan Nikon, dengan kabel USB-C pendek
-  (maksimal 1 m). Belum tersedia di Windows.
+  selagi kabel lepas ikut diambil. Pengecualiannya Fujifilm dan Sony lewat
+  PC Remote: foto itu tidak ikut diambil, dan hanya ada di kartu kalau
+  kamera menyimpan ke kartu.
+- Opsi **Simpan foto asli di perangkat ini**: matikan bila yang ingin
+  disimpan hanya hasilnya (di `ganjil` / `genap`). Foto asli dihapus hanya
+  kalau hasilnya sudah ada **dan** kamera menyimpan salinannya ke kartu.
+  Foto tanpa kartu (PC000001…) dan foto yang gagal diolah tidak pernah
+  dihapus.
+- **macOS:** LUMIX, Canon, Nikon, Sony, Fujifilm (Sony lama seperti a7 III,
+  a9, a6000–a6600 lewat mode PC Remote).
+  **Windows:** LUMIX, Canon, Nikon, Sony (mode PC Remote), Fujifilm.
+  Fotolane tidak memasang driver apa pun.
+  **Android:** LUMIX, Canon, Nikon, Sony (mode PC Remote), dengan kabel USB-C
+  pendek (maksimal 1 m).
+- LUMIX (S5IIX) dan Canon (EOS R50 V) sudah diuji dengan kamera asli di
+  macOS, Windows, dan Android; merek lain belum.
 - Tekan **Berhenti** sebelum mencabut kabel.
 
 ## 2. Foto — proses sekaligus
