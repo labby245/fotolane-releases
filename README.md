@@ -203,7 +203,7 @@ Cara membeli, semuanya dari dalam app:
    tertera — tiga digit terakhirnya penanda pembayaranmu.
 3. Tekan **Kirim via WhatsApp**. Pesannya sudah terisi, tinggal kirim.
    Tidak ada WhatsApp di perangkat itu? Pindai QR *"Kirim dari HP"* dengan
-   kamera HP, atau kirim lewat email ke **labstoryid@gmail.com**. Kuncinya
+   kamera HP, atau kirim lewat email ke **hello@labstory.id**. Kuncinya
    kami balas lewat jalur yang sama.
 4. Kami membalas dengan kunci. Tempel di app, tekan **Aktifkan** — selesai.
 

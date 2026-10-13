@@ -203,7 +203,7 @@ How to buy, all from inside the app:
    the last three digits identify your payment.
 3. Press **Send via WhatsApp**. The message is already filled in.
    No WhatsApp on that device? Scan the *"Send from your phone"* QR with your
-   phone camera, or email **labstoryid@gmail.com** instead. We reply with the
+   phone camera, or email **hello@labstory.id** instead. We reply with the
    key the same way.
 4. We reply with a key. Paste it into the app and press **Activate** — done.
 
