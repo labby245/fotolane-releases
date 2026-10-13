@@ -166,8 +166,30 @@ then pick the one file for your device:
 | Device | File to download | Requires |
 |---|---|---|
 | **Android** phone / tablet | `Fotolane-…-arm64.apk` | Android 7.0+, 64-bit |
-| **Mac** | `Fotolane-….dmg` | macOS 12+ |
-| **Windows** | `Fotolane-Setup-….exe` | Windows 10 / 11, 64-bit |
+| **Mac** | `Fotolane-….dmg` | macOS 12+, **Apple Silicon** (M1 or newer) |
+| **Windows** | `Fotolane-Setup-….exe` | Windows 10 / 11, 64-bit (Intel / AMD processor) |
+
+### Requirements
+
+Check these before you buy; the 500-photo trial lets you make sure everything
+works on your device.
+
+- **Intel Macs are not supported yet.** Photo/video compression and the USB
+  camera in Fotolane for Mac currently run only on Apple Silicon Macs (M1,
+  M2, M3, M4, and later). Check Apple menu → *About This Mac*: it says
+  "Chip Apple M…", not "Processor Intel".
+- **Processor & RAM (laptop / PC):** 4 cores and 8 GB RAM recommended.
+  2-core laptops (e.g. Intel Celeron / Pentium, AMD Athlon) still work but
+  more slowly; Fotolane automatically processes fewer photos at once on
+  them.
+- **Storage:** about 1 GB for the app, plus room for photos. Originals are
+  kept too unless you turn off *Keep original photos on this device*
+  (compressed results are only about 2% of the original size).
+- **Android:** Android 7.0 or newer, 64-bit (almost every phone / tablet
+  since 2017). For the USB camera the device must support USB OTG; use a
+  USB-C data cable, 1 m at most.
+- **USB camera:** use a data cable (not a charge-only cable), turn off the
+  camera's Wi-Fi, and check the [tested cameras](#tested-cameras).
 
 ### Install notes
 

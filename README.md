@@ -165,8 +165,30 @@ pilih satu berkas sesuai perangkatmu:
 | Perangkat | Berkas yang diunduh | Syarat |
 |---|---|---|
 | HP / tablet **Android** | `Fotolane-…-arm64.apk` | Android 7.0 ke atas, 64-bit |
-| **Mac** | `Fotolane-….dmg` | macOS 12 ke atas |
-| **Windows** | `Fotolane-Setup-….exe` | Windows 10 / 11, 64-bit |
+| **Mac** | `Fotolane-….dmg` | macOS 12 ke atas, **Apple Silicon** (M1 atau lebih baru) |
+| **Windows** | `Fotolane-Setup-….exe` | Windows 10 / 11, 64-bit (prosesor Intel / AMD) |
+
+### Persyaratan
+
+Cek dulu sebelum membeli; masa coba 500 foto bisa dipakai untuk memastikan
+semuanya jalan di perangkatmu.
+
+- **Mac Intel belum didukung.** Kompresi foto/video dan kamera USB di
+  Fotolane untuk Mac saat ini hanya jalan di Mac Apple Silicon (M1, M2, M3,
+  M4, dan seterusnya). Cek di menu Apple → *About This Mac*: tertulis
+  "Chip Apple M…", bukan "Processor Intel".
+- **Prosesor & RAM (laptop / PC):** disarankan 4 core dan RAM 8 GB.
+  Laptop 2 core (mis. Intel Celeron / Pentium, AMD Athlon) tetap bisa
+  dipakai tapi lebih lambat; Fotolane otomatis memproses lebih sedikit foto
+  sekaligus di laptop seperti itu.
+- **Ruang penyimpanan:** sekitar 1 GB untuk app, ditambah ruang untuk foto.
+  Foto asli ikut disimpan kecuali opsi *Simpan foto asli di perangkat ini*
+  dimatikan (hasil kompresi hanya ±2% dari ukuran aslinya).
+- **Android:** Android 7.0 ke atas, 64-bit (hampir semua HP / tablet sejak
+  2017). Untuk kamera USB, perangkat harus mendukung USB OTG; pakai kabel
+  USB-C data, maksimal 1 m.
+- **Kamera USB:** pakai kabel data (bukan kabel khusus mengisi daya), matikan
+  Wi-Fi kamera, dan cek [daftar kamera yang sudah diuji](#kamera-yang-sudah-diuji).
 
 ### Catatan pemasangan
 
