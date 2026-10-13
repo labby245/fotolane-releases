@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "product": "fotolane",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "releasedAt": "2026-10-13",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
@@ -72,6 +72,16 @@
     ]
   },
   "changelog": [
+    {
+      "version": "1.5.8",
+      "date": "2026-10-13",
+      "items": [
+        "Jendela Aktifkan lebih sederhana: tekan “Buka halaman beli”, bayar dengan QRIS di web, lalu tempel kunci dari halaman pembayaran atau email kuitansi.",
+        "Perangkat kedua tetap gratis: daftarkan kode perangkatnya di halaman pembayaranmu (tautannya ada di email kuitansi).",
+        "Ada pertanyaan sebelum membeli? Tekan “Tanya lewat email”.",
+        "Lisensi yang sudah aktif tetap berlaku seperti biasa."
+      ]
+    },
     {
       "version": "1.5.7",
       "date": "2026-10-13",

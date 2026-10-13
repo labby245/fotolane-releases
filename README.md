@@ -218,19 +218,22 @@ Tetap jalankan**.
 Pakai kamera USB? Coba dulu dengan kameramu selama masa coba sebelum membeli
 (lihat [kamera yang sudah diuji](#kamera-yang-sudah-diuji)).
 
-Cara membeli, semuanya dari dalam app:
+Cara membeli:
 
-1. Tekan **Aktifkan** di bagian atas layar.
-2. Bayar lewat **QRIS** (merchant *LABSTORY - SMRG*) dengan nominal yang
-   tertera — tiga digit terakhirnya penanda pembayaranmu.
-3. Tekan **Kirim via WhatsApp**. Pesannya sudah terisi, tinggal kirim.
-   Tidak ada WhatsApp di perangkat itu? Pindai QR *"Kirim dari HP"* dengan
-   kamera HP, atau kirim lewat email ke **hello@labstory.id**. Kuncinya
-   kami balas lewat jalur yang sama.
-4. Kami membalas dengan kunci. Tempel di app, tekan **Aktifkan** — selesai.
+1. Tekan **Aktifkan** di bagian atas layar, lalu **Buka halaman beli**.
+   Halaman [apps.labstory.id/produk/fotolane](https://apps.labstory.id/produk/fotolane)
+   terbuka dengan kode perangkatmu sudah terisi.
+2. Bayar dengan **QRIS** di halaman itu.
+3. Setelah pembayaran dikonfirmasi, kunci tampil di halaman pembayaran dan
+   dikirim ke email-mu.
+4. Tempel kunci (atau seluruh isi email kuitansi) di jendela **Aktifkan**,
+   lalu tekan **Aktifkan** — selesai.
 
-Untuk perangkat kedua, buka **Aktifkan** di perangkat itu dan tekan
-*"Sudah beli? Minta kunci untuk perangkat ini"*.
+**Perangkat kedua** gratis: daftarkan kode perangkatnya di halaman
+pembayaranmu (tautannya ada di email kuitansi), lalu tempel kunci yang
+muncul di perangkat itu. Jangan membeli lagi.
+
+Ada pertanyaan sebelum membeli? Kirim email ke **hello@labstory.id**.
 
 Lisensi berlaku untuk semua versi yang rilis sampai setahun sesudah kamu
 membeli. Sebelum menawarkan update ke versi di luar masa itu, app memberi

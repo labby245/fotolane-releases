@@ -218,19 +218,22 @@ choose **Open**.
 Using a USB camera? Try it with your camera during the trial before you buy
 (see [tested cameras](#tested-cameras)).
 
-How to buy, all from inside the app:
+How to buy:
 
-1. Press **Activate** at the top of the screen.
-2. Pay with **QRIS** (merchant *LABSTORY - SMRG*) using the amount shown —
-   the last three digits identify your payment.
-3. Press **Send via WhatsApp**. The message is already filled in.
-   No WhatsApp on that device? Scan the *"Send from your phone"* QR with your
-   phone camera, or email **hello@labstory.id** instead. We reply with the
-   key the same way.
-4. We reply with a key. Paste it into the app and press **Activate** — done.
+1. Press **Activate** at the top of the screen, then **Open the buy page**.
+   [apps.labstory.id/produk/fotolane](https://apps.labstory.id/produk/fotolane)
+   opens with your device code already filled in.
+2. Pay with **QRIS** on that page.
+3. Once the payment is confirmed, the key appears on the payment page and is
+   emailed to you.
+4. Paste the key (or the whole receipt email) into the **Activate** window
+   and press **Activate** — done.
 
-For a second device, open **Activate** on that device and tap *"Already
-bought? Request a key for this device"*.
+A **second device** is free: add its device code on your payment page (the
+link is in the receipt email), then paste the key it shows on that device.
+Don't buy again.
+
+Questions before buying? Email **hello@labstory.id**.
 
 A license covers every version released up to one year after you buy. Before
 offering an update outside that window, the app tells you first. Renew from
