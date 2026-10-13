@@ -76,9 +76,24 @@ split into `ganjil` / `genap`.
   Fotolane installs no drivers.
   **Android:** LUMIX, Canon, Nikon, Sony (PC Remote mode), with a short USB-C
   cable (1 m at most).
-- LUMIX (S5IIX) and Canon (EOS R50 V) are tested with real cameras on macOS,
-  Windows and Android; the other brands are not yet.
+- Models tested with a real camera: see the list below.
 - Press **Stop** before unplugging the cable.
+
+### Tested cameras
+
+| Brand | Model | macOS | Windows | Android |
+|---|---|:---:|:---:|:---:|
+| LUMIX | S5IIX (DC-S5M2X) | ✅ | ✅ | ✅ |
+| Canon | EOS R50 V | ✅ | ✅ | ✅ |
+| Nikon | not yet tested with a real camera | | | |
+| Sony | not yet tested with a real camera | | | |
+| Fujifilm | not yet tested with a real camera | | | not supported yet |
+
+Your camera isn't listed? It most likely still works, because each brand
+uses the same protocol. **Try it during the trial (500 photos)** before you
+buy. Once your camera connects, tap **Camera working? Let us know** under the
+Auto Resize status and we'll add it to this list. If it won't connect, tap
+**Camera not connecting? Let us know**.
 
 ## 2. Photos — process a batch at once
 
@@ -177,6 +192,9 @@ choose **Open**.
 | **Auto Resize** | Free for the **first 500 photos** |
 | Full license | **Rp 400,000, one-time**, for **2 devices** (e.g. a laptop + a phone/tablet), including **1 year of updates** |
 | Update renewal | **Rp 150,000 per year**, optional. Without it, the version you have keeps working forever |
+
+Using a USB camera? Try it with your camera during the trial before you buy
+(see [tested cameras](#tested-cameras)).
 
 How to buy, all from inside the app:
 

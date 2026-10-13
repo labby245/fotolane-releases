@@ -75,9 +75,25 @@ dan dipisah ke `ganjil` / `genap`.
   Fotolane tidak memasang driver apa pun.
   **Android:** LUMIX, Canon, Nikon, Sony (mode PC Remote), dengan kabel USB-C
   pendek (maksimal 1 m).
-- LUMIX (S5IIX) dan Canon (EOS R50 V) sudah diuji dengan kamera asli di
-  macOS, Windows, dan Android; merek lain belum.
+- Model yang sudah diuji dengan kamera asli: lihat daftar di bawah.
 - Tekan **Berhenti** sebelum mencabut kabel.
+
+### Kamera yang sudah diuji
+
+| Merek | Model | macOS | Windows | Android |
+|---|---|:---:|:---:|:---:|
+| LUMIX | S5IIX (DC-S5M2X) | ✅ | ✅ | ✅ |
+| Canon | EOS R50 V | ✅ | ✅ | ✅ |
+| Nikon | belum diuji dengan kamera asli | | | |
+| Sony | belum diuji dengan kamera asli | | | |
+| Fujifilm | belum diuji dengan kamera asli | | | belum didukung |
+
+Kameramu belum ada di daftar? Kemungkinan besar tetap jalan, karena
+koneksinya memakai protokol yang sama untuk satu merek. **Coba dulu selama
+masa coba (500 foto)** sebelum membeli. Setelah kameramu tersambung, tekan
+**Kamera ini lancar? Kabari kami** di bawah status Auto Resize, dan kameramu
+kami tambahkan ke daftar ini. Kalau tidak mau tersambung, tekan **Kamera
+tidak tersambung? Kabari kami**.
 
 ## 2. Foto — proses sekaligus
 
@@ -176,6 +192,9 @@ Tetap jalankan**.
 | **Auto Resize** | Gratis untuk **500 foto pertama** |
 | Lisensi penuh | **Rp 400.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk **update 1 tahun** |
 | Perpanjangan update | **Rp 150.000 per tahun**, opsional. Tanpa perpanjangan, versi yang sudah kamu punya tetap jalan selamanya |
+
+Pakai kamera USB? Coba dulu dengan kameramu selama masa coba sebelum membeli
+(lihat [kamera yang sudah diuji](#kamera-yang-sudah-diuji)).
 
 Cara membeli, semuanya dari dalam app:
 
