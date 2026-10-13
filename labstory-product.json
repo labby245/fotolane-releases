@@ -112,5 +112,117 @@
         "Aktivasi lewat email kini ke hello@labstory.id. WhatsApp tetap sama."
       ]
     }
-  ]
+  ],
+  "en": {
+    "compatibility": {
+      "title": "Tested cameras",
+      "intro": "Tested with real cameras. Other LUMIX, Canon and Nikon models will most likely work, but that isn’t guaranteed; Sony and Fujifilm depend on the manufacturer’s SDK model list. Try it first with the 500-photo trial.",
+      "columns": [
+        "Brand",
+        "Model tested",
+        "Mac",
+        "Win",
+        "Android"
+      ],
+      "rows": [
+        [
+          "LUMIX",
+          "S5IIX (DC-S5M2X)",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Canon",
+          "EOS R50 V",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Nikon",
+          "Supported, not yet tested with a real camera"
+        ],
+        [
+          "Sony",
+          "Supported through PC Remote mode, not yet tested with a real camera. Photos taken while the cable is unplugged are not imported (except some newer models on macOS)"
+        ],
+        [
+          "Fujifilm",
+          "Supported on macOS & Windows for Fujifilm SDK models (X-H2/H2S, X-T5/T4/T3, X-S20/S10, X-M5, X-Pro3, GFX), not yet tested · Android not supported yet · photos taken while the cable is unplugged are not imported"
+        ],
+        [
+          "Other brands",
+          "OM System / Olympus, Pentax / Ricoh, Leica and Sigma can’t connect by cable yet — use Auto Resize with the memory card folder"
+        ]
+      ]
+    },
+    "requirements": {
+      "intro": "Check before you buy — or try 500 photos free to make sure Fotolane runs on your device.",
+      "notes": [
+        {
+          "title": "Mac",
+          "text": "macOS 12 or later, Apple Silicon (M1, M2, M3, M4, …). Intel Macs are not supported yet — check Apple menu → About This Mac: it must say “Chip Apple M…”, not “Processor Intel”."
+        },
+        {
+          "title": "Windows",
+          "text": "Windows 10 / 11, 64-bit, Intel or AMD processor."
+        },
+        {
+          "title": "Android",
+          "text": "Android 7.0 or later, 64-bit (almost every phone/tablet since 2017). The USB camera feature needs USB OTG support and a USB-C data cable of 1 m at most."
+        },
+        {
+          "title": "Processor & RAM",
+          "text": "4 cores and 8 GB RAM recommended. 2-core laptops (e.g. Celeron / Pentium / Athlon) still work, just more slowly."
+        },
+        {
+          "title": "Storage",
+          "text": "About 1 GB for the app, plus room for photos — compressed results are only about 2% of the originals."
+        },
+        {
+          "title": "USB camera",
+          "text": "Use a data cable (not a charge-only cable) and turn off the camera’s Wi-Fi. See the tested cameras above."
+        }
+      ]
+    },
+    "changelog": [
+      {
+        "version": "1.5.8",
+        "date": "2026-10-13",
+        "items": [
+          "A simpler Activate window: press “Open purchase page”, pay with QRIS on the web, then paste the key from the payment page or the receipt email.",
+          "The second device is still free: register its device code on your payment page (the link is in the receipt email).",
+          "Questions before buying? Press “Ask by email”.",
+          "Licenses that are already active keep working as usual."
+        ]
+      },
+      {
+        "version": "1.5.7",
+        "date": "2026-10-13",
+        "items": [
+          "If Fotolane closed abnormally, or froze and was closed, it offers to send a report when reopened so we can fix it. Reports are only sent if you agree, you can see the contents first, and no photos are included.",
+          "The Activate window shows the latest price, including the remaining introductory-price quota.",
+          "Ready for online purchase at apps.labstory.id: the device code is filled in for you and the key is sent by email.",
+          "An email with keys for two devices can be pasted whole; Fotolane uses the key for this device.",
+          "Mac: Cmd+Q asks first if a job is still running, and releases the camera cleanly."
+        ]
+      },
+      {
+        "version": "1.5.6",
+        "date": "2026-10-13",
+        "items": [
+          "Lighter on 2-core laptops (e.g. AMD Athlon, Intel Celeron / Pentium): photo processing no longer makes the app “Not Responding”.",
+          "If the app closes because of an error, the cause is written to the log folder so it can be traced."
+        ]
+      },
+      {
+        "version": "1.5.5",
+        "date": "2026-10-13",
+        "items": [
+          "Email activation now goes to hello@labstory.id. WhatsApp stays the same."
+        ]
+      }
+    ]
+  }
 }
