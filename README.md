@@ -49,6 +49,11 @@ langsung diperkecil dan dipisah ke folder `ganjil` dan `genap`.
 
 ### Kamera USB — langsung dari kamera
 
+<img src="img/kamera-usb.png" width="520" alt="Fotolane tersambung ke LUMIX S5IIX lewat kabel USB">
+
+*Sesi nyata dengan LUMIX S5IIX: setiap jepretan masuk lewat kabel, 6,3 MB
+menjadi 148 KB, lalu terpilah ganjil / genap.*
+
 Pilih sumber **Kamera USB**, colok kamera dengan kabel, tekan **Mulai mengawasi**, lalu
 memotret seperti biasa. Setiap jepretan langsung masuk lewat kabel, diperkecil,
 dan dipisah ke `ganjil` / `genap`.
@@ -203,10 +208,18 @@ semuanya jalan di perangkatmu.
 "instal dari sumber ini"; izinkan. Saat pertama dipakai, app meminta izin
 **"Akses semua file"**. Izin itu dipakai untuk membaca folder fotomu dan
 menulis folder hasil di sebelahnya — tanpa itu app tidak bisa menyimpan hasil
-di tempat yang kamu pilih. App tidak mengirim apa pun ke mana pun.
+di tempat yang kamu pilih. Fotomu tidak pernah dikirim ke mana pun.
 
-**Mac** — kalau muncul peringatan bahwa app tidak bisa dibuka, klik kanan ikon
-app lalu pilih **Buka**.
+**Mac** — Fotolane belum dinotarisasi Apple, jadi saat pertama dibuka macOS
+akan menolaknya. Caranya:
+
+1. Seret Fotolane ke folder **Aplikasi**, lalu buka sekali. Saat muncul
+   peringatan, tekan **Selesai** (bukan Pindahkan ke Tong Sampah).
+2. Buka **Pengaturan Sistem → Privasi & Keamanan**, gulir ke bawah, lalu tekan
+   **Tetap Buka** di samping pesan tentang Fotolane. Masukkan kata sandi Mac.
+3. Buka Fotolane lagi dan tekan **Buka**. Langkah ini cukup sekali.
+
+Di macOS 14 atau lebih lama, cukup klik kanan ikon app lalu pilih **Buka**.
 
 **Windows** — kalau muncul layar biru SmartScreen, klik **Info selengkapnya →
 Tetap jalankan**.

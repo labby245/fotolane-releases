@@ -51,6 +51,11 @@ is resized and sorted into `ganjil` (odd) and `genap` (even) folders.
 
 ### USB camera — straight from the camera
 
+<img src="img/kamera-usb.png" width="520" alt="Fotolane connected to a LUMIX S5IIX over USB">
+
+*A real session with a LUMIX S5IIX (app in Indonesian): every shot comes in
+over the cable, 6.3 MB becomes 148 KB, then gets split into odd / even.*
+
 Choose the **USB camera** source, connect the camera with a cable, press **Start
 watching**, and shoot as usual. Every shot comes in over the cable, is resized, and is
 split into `ganjil` / `genap`.
@@ -205,10 +210,18 @@ works on your device.
 whether to allow installing from this source; allow it. On first use the app
 asks for **"All files access"**. That permission is used to read your photo
 folder and write the results folder next to it — without it the app cannot save
-results where you chose. The app sends nothing anywhere.
+results where you chose. Your photos are never sent anywhere.
 
-**Mac** — if macOS says the app can't be opened, right-click the app icon and
-choose **Open**.
+**Mac** — Fotolane isn't notarized by Apple yet, so macOS blocks it the first
+time. To open it:
+
+1. Drag Fotolane into **Applications** and open it once. When the warning
+   appears, press **Done** (not Move to Trash).
+2. Open **System Settings → Privacy & Security**, scroll down, and press
+   **Open Anyway** next to the message about Fotolane. Enter your Mac password.
+3. Open Fotolane again and press **Open**. You only need to do this once.
+
+On macOS 14 or older, right-click the app icon and choose **Open** instead.
 
 **Windows** — if the blue SmartScreen appears, click **More info → Run anyway**.
 
