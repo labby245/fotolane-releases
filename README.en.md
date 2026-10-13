@@ -22,9 +22,9 @@ Straight out of the camera, event photos run tens of megabytes each — too big 
 upload, and they have to be split into batches of 2000 per folder. Doing that by
 hand after a shoot can eat hours.
 
-Fotolane does it for you. **1000 photos that used to take about 28 minutes are
-done in about 41 seconds** (measured on an Apple Silicon Mac; still far faster
-than manual work on phones and Windows).
+Fotolane does it for you: **1000 photos resized in about 41 seconds** (about
+41 ms per photo, measured on an Apple Silicon Mac; phones and Windows laptops
+are slower, depending on the device).
 
 Your original photos are **never modified or deleted**: results always go into
 a new folder beside them. The only exception is the USB camera option "Keep
@@ -63,9 +63,10 @@ split into `ganjil` / `genap`.
   PC Save Image" to JPEG only (if the menu has it), otherwise the RAW also
   crosses the cable and is dropped.
 - Cable pulled? Fotolane reconnects by itself, and shots taken while it was
-  out are picked up too. The exceptions are Fujifilm and Sony over PC Remote:
-  those shots are not picked up, and are only on the card if the camera saves
-  to its card.
+  out are picked up from the card. This has been tried with real LUMIX and
+  Canon cameras; Nikon works the same way but is untested. Fujifilm, and Sony
+  except some newer models on macOS, don't pick up shots taken while the
+  cable was out: those are only on the card if the camera saves to its card.
 - **Keep original photos on this device**: switch it off to keep only the
   results (in `ganjil` / `genap`). An original is deleted only once its result
   exists **and** the camera keeps a copy on its card. Cardless shots
@@ -76,6 +77,12 @@ split into `ganjil` / `genap`.
   Fotolane installs no drivers.
   **Android:** LUMIX, Canon, Nikon, Sony (PC Remote mode), with a short USB-C
   cable (1 m at most).
+- Fujifilm only for models Fujifilm's SDK supports: X-H2, X-H2S, X-T5, X-T4,
+  X-T3, X-S20, X-S10, X-M5, X-Pro3, and GFX (100 II, 100S II, 100S, 100,
+  100RF, 50S II, 50S, 50R, ETERNA 55). Other models (e.g. the X100, X-E and
+  X-T30 series) are not on the SDK list, so they aren't supported yet.
+- Other brands (OM System / Olympus, Pentax / Ricoh, Leica, Sigma) can't
+  connect by cable yet. Use Auto Resize on the memory card folder instead.
 - Models tested with a real camera: see the list below.
 - Press **Stop** before unplugging the cable.
 
@@ -89,9 +96,10 @@ split into `ganjil` / `genap`.
 | Sony | not yet tested with a real camera | | | |
 | Fujifilm | not yet tested with a real camera | | | not supported yet |
 
-Your camera isn't listed? It most likely still works, because each brand
-uses the same protocol. **Try it during the trial (500 photos)** before you
-buy. Once your camera connects, tap **Camera working? Let us know** under the
+Your camera isn't listed? Other LUMIX, Canon and Nikon models most likely
+work, because each brand uses the same protocol, but that isn't guaranteed.
+Sony and Fujifilm depend on the model lists in their makers' SDKs (see
+above). **Try it during the trial (500 photos)** before you buy. Once your camera connects, tap **Camera working? Let us know** under the
 Auto Resize status and we'll add it to this list. If it won't connect, tap
 **Camera not connecting? Let us know**.
 
@@ -237,7 +245,10 @@ Questions before buying? Email **hello@labstory.id**.
 
 A license covers every version released up to one year after you buy. Before
 offering an update outside that window, the app tells you first. Renew from
-**Settings → Renew updates**; one payment renews both of your devices.
+**Settings → Renew updates**: the
+[renewal page at apps.labstory.id](https://apps.labstory.id/produk/fotolane/perpanjang)
+opens with your key already filled in. Also paste your second device's key
+so one payment renews both.
 Licenses bought before 13 October 2026 keep getting every update.
 
 ---

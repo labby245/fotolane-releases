@@ -20,9 +20,9 @@ Foto langsung dari kamera ukurannya puluhan MB — terlalu besar untuk diunggah,
 dan harus dipecah per 2000 foto per folder. Mengerjakannya manual setelah acara
 bisa memakan berjam-jam.
 
-Fotolane mengerjakan itu sendiri. **1000 foto yang tadinya perlu sekitar
-28 menit selesai dalam sekitar 41 detik** (diukur di Mac Apple Silicon; di HP
-dan Windows tetap jauh lebih cepat daripada manual).
+Fotolane mengerjakan itu sendiri: **1000 foto diperkecil dalam sekitar 41
+detik** (±41 ms per foto, diukur di Mac Apple Silicon; di HP dan laptop
+Windows lebih lambat, tergantung perangkatnya).
 
 Foto aslimu **tidak pernah diubah atau dihapus**: hasilnya selalu ditulis ke
 folder baru di sampingnya. Satu-satunya pengecualian adalah opsi Kamera USB
@@ -61,8 +61,10 @@ dan dipisah ke `ganjil` / `genap`.
   "RAW+J PC Save Image" ke JPEG saja (kalau ada di menunya), kalau tidak
   RAW ikut terkirim lewat kabel lalu dibuang.
 - Kabel tercabut? Fotolane menyambung lagi sendiri, dan foto yang dijepret
-  selagi kabel lepas ikut diambil. Pengecualiannya Fujifilm dan Sony lewat
-  PC Remote: foto itu tidak ikut diambil, dan hanya ada di kartu kalau
+  selagi kabel lepas ikut diambil dari kartu. Ini sudah dicoba dengan kamera
+  asli untuk LUMIX dan Canon; Nikon memakai cara yang sama tapi belum diuji.
+  Fujifilm, dan Sony kecuali beberapa model baru di macOS, tidak mengambil
+  foto yang dijepret selagi kabel lepas: foto itu hanya ada di kartu kalau
   kamera menyimpan ke kartu.
 - Opsi **Simpan foto asli di perangkat ini**: matikan bila yang ingin
   disimpan hanya hasilnya (di `ganjil` / `genap`). Foto asli dihapus hanya
@@ -75,6 +77,10 @@ dan dipisah ke `ganjil` / `genap`.
   Fotolane tidak memasang driver apa pun.
   **Android:** LUMIX, Canon, Nikon, Sony (mode PC Remote), dengan kabel USB-C
   pendek (maksimal 1 m).
+- Fujifilm hanya untuk model yang didukung SDK Fujifilm: X-H2, X-H2S, X-T5, X-T4, X-T3, X-S20, X-S10, X-M5, X-Pro3, dan GFX (100 II, 100S II, 100S, 100, 100RF, 50S II, 50S, 50R, ETERNA 55). Model lain
+  (mis. seri X100, X-E, X-T30) tidak ada di daftar SDK, jadi belum didukung.
+- Merek lain (OM System / Olympus, Pentax / Ricoh, Leica, Sigma) belum bisa
+  lewat kabel. Pakai Auto Resize dengan folder kartu memori.
 - Model yang sudah diuji dengan kamera asli: lihat daftar di bawah.
 - Tekan **Berhenti** sebelum mencabut kabel.
 
@@ -88,9 +94,10 @@ dan dipisah ke `ganjil` / `genap`.
 | Sony | belum diuji dengan kamera asli | | | |
 | Fujifilm | belum diuji dengan kamera asli | | | belum didukung |
 
-Kameramu belum ada di daftar? Kemungkinan besar tetap jalan, karena
-koneksinya memakai protokol yang sama untuk satu merek. **Coba dulu selama
-masa coba (500 foto)** sebelum membeli. Setelah kameramu tersambung, tekan
+Kameramu belum ada di daftar? Model LUMIX, Canon, dan Nikon lain kemungkinan
+besar jalan karena satu merek memakai protokol yang sama, tapi belum
+dijamin. Sony dan Fujifilm bergantung pada daftar model SDK pabrikannya (lihat
+di atas). **Coba dulu selama masa coba (500 foto)** sebelum membeli. Setelah kameramu tersambung, tekan
 **Kamera ini lancar? Kabari kami** di bawah status Auto Resize, dan kameramu
 kami tambahkan ke daftar ini. Kalau tidak mau tersambung, tekan **Kamera
 tidak tersambung? Kabari kami**.
@@ -237,8 +244,10 @@ Ada pertanyaan sebelum membeli? Kirim email ke **hello@labstory.id**.
 
 Lisensi berlaku untuk semua versi yang rilis sampai setahun sesudah kamu
 membeli. Sebelum menawarkan update ke versi di luar masa itu, app memberi
-tahu dulu. Perpanjang dari **Pengaturan → Perpanjang update**; satu
-pembayaran memperpanjang kedua perangkatmu. Lisensi yang dibeli sebelum
+tahu dulu. Perpanjang dari **Pengaturan → Perpanjang update**: halaman
+[perpanjangan di apps.labstory.id](https://apps.labstory.id/produk/fotolane/perpanjang)
+terbuka dengan kuncimu sudah terisi. Tempel juga kunci perangkat keduamu
+supaya satu pembayaran memperpanjang keduanya. Lisensi yang dibeli sebelum
 13 Oktober 2026 tetap mendapat semua update.
 
 ---

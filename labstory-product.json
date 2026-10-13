@@ -5,7 +5,7 @@
   "releasedAt": "2026-10-13",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
-    "intro": "Diuji dengan kamera asli. Belum ada di daftar? Kemungkinan besar tetap jalan — coba dulu selama masa coba 500 foto.",
+    "intro": "Diuji dengan kamera asli. Model LUMIX, Canon, dan Nikon lain kemungkinan besar jalan, tapi belum dijamin; Sony dan Fujifilm bergantung pada daftar model SDK pabrikannya. Coba dulu selama masa coba 500 foto.",
     "columns": [
       "Merek",
       "Model diuji",
@@ -34,11 +34,15 @@
       ],
       [
         "Sony",
-        "Didukung (mode PC Remote), belum diuji dengan kamera asli"
+        "Didukung lewat mode PC Remote, belum diuji dengan kamera asli. Foto yang dijepret selagi kabel lepas tidak diambil (kecuali beberapa model baru di macOS)"
       ],
       [
         "Fujifilm",
-        "Didukung di macOS & Windows, belum diuji · Android belum didukung"
+        "Didukung di macOS & Windows untuk model SDK Fujifilm (X-H2/H2S, X-T5/T4/T3, X-S20/S10, X-M5, X-Pro3, GFX), belum diuji · Android belum didukung · foto selagi kabel lepas tidak diambil"
+      ],
+      [
+        "Merek lain",
+        "OM System / Olympus, Pentax / Ricoh, Leica, Sigma belum bisa lewat kabel — pakai Auto Resize dengan folder kartu memori"
       ]
     ]
   },
