@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "product": "fotolane",
+  "version": "1.5.7",
+  "releasedAt": "2026-10-13",
+  "compatibility": {
+    "title": "Kamera yang sudah diuji",
+    "intro": "Diuji dengan kamera asli. Belum ada di daftar? Kemungkinan besar tetap jalan — coba dulu selama masa coba 500 foto.",
+    "columns": [
+      "Merek",
+      "Model diuji",
+      "Mac",
+      "Win",
+      "Android"
+    ],
+    "rows": [
+      [
+        "LUMIX",
+        "S5IIX (DC-S5M2X)",
+        "✓",
+        "✓",
+        "✓"
+      ],
+      [
+        "Canon",
+        "EOS R50 V",
+        "✓",
+        "✓",
+        "✓"
+      ],
+      [
+        "Nikon",
+        "Didukung, belum diuji dengan kamera asli"
+      ],
+      [
+        "Sony",
+        "Didukung (mode PC Remote), belum diuji dengan kamera asli"
+      ],
+      [
+        "Fujifilm",
+        "Didukung di macOS & Windows, belum diuji · Android belum didukung"
+      ]
+    ]
+  },
+  "requirements": {
+    "intro": "Cek dulu sebelum membeli — atau coba dulu 500 foto gratis untuk memastikan Fotolane jalan di perangkatmu.",
+    "notes": [
+      {
+        "title": "Mac",
+        "text": "macOS 12 ke atas, Apple Silicon (M1, M2, M3, M4, …). Mac Intel belum didukung — cek di menu Apple → About This Mac: harus tertulis “Chip Apple M…”, bukan “Processor Intel”."
+      },
+      {
+        "title": "Windows",
+        "text": "Windows 10 / 11, 64-bit, prosesor Intel atau AMD."
+      },
+      {
+        "title": "Android",
+        "text": "Android 7.0 ke atas, 64-bit (hampir semua HP / tablet sejak 2017). Kamera USB butuh dukungan USB OTG dan kabel USB-C data maksimal 1 m."
+      },
+      {
+        "title": "Prosesor & RAM",
+        "text": "Disarankan 4 core dan RAM 8 GB. Laptop 2 core (mis. Celeron / Pentium / Athlon) tetap bisa, hanya lebih lambat."
+      },
+      {
+        "title": "Penyimpanan",
+        "text": "Sekitar 1 GB untuk app, ditambah ruang untuk foto — hasil kompresi hanya ±2% dari ukuran aslinya."
+      },
+      {
+        "title": "Kamera USB",
+        "text": "Pakai kabel data (bukan kabel khusus mengisi daya) dan matikan Wi-Fi kamera. Lihat daftar kamera teruji di atas."
+      }
+    ]
+  },
+  "changelog": [
+    {
+      "version": "1.5.7",
+      "date": "2026-10-13",
+      "items": [
+        "Kalau Fotolane tertutup tidak normal, atau macet lalu ditutup, saat dibuka lagi Fotolane menawarkan mengirim laporan supaya bisa kami perbaiki. Laporan hanya terkirim kalau kamu setuju, isinya bisa dilihat dulu, dan foto tidak ikut terkirim.",
+        "Jendela Aktifkan menampilkan harga terbaru, termasuk sisa kuota harga perkenalan.",
+        "Siap untuk pembelian online di apps.labstory.id: kode perangkat langsung terisi, kunci dikirim ke email.",
+        "Email berisi kunci untuk dua perangkat bisa ditempel utuh; Fotolane memakai kunci untuk perangkat ini.",
+        "Mac: Cmd+Q menanyakan dulu kalau proses masih berjalan, dan melepas kamera dengan rapi."
+      ]
+    },
+    {
+      "version": "1.5.6",
+      "date": "2026-10-13",
+      "items": [
+        "Lebih ringan di laptop 2 core (mis. AMD Athlon, Intel Celeron / Pentium): proses foto tidak lagi membuat app “Not Responding”.",
+        "Kalau app tertutup karena error, penyebabnya dicatat di folder log supaya bisa ditelusuri."
+      ]
+    },
+    {
+      "version": "1.5.5",
+      "date": "2026-10-13",
+      "items": [
+        "Aktivasi lewat email kini ke hello@labstory.id. WhatsApp tetap sama."
+      ]
+    }
+  ]
+}
