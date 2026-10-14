@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "product": "fotolane",
-  "version": "1.5.9",
+  "version": "1.5.10",
   "releasedAt": "2026-10-14",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
-    "intro": "Diuji dengan kamera asli. Model LUMIX, Canon, dan Nikon lain kemungkinan besar jalan, tapi belum dijamin; Sony dan Fujifilm bergantung pada daftar model SDK pabrikannya. Coba dulu selama masa coba 500 foto.",
+    "intro": "Sudah dicoba dengan kamera asli. Kamera lain? Coba gratis 500 foto dulu.",
     "columns": [
       "Merek",
       "Model diuji",
@@ -16,7 +16,7 @@
     "rows": [
       [
         "LUMIX",
-        "S5IIX (DC-S5M2X)",
+        "S5IIX",
         "✓",
         "✓",
         "✓"
@@ -30,104 +30,86 @@
       ],
       [
         "Nikon",
-        "Didukung, belum diuji dengan kamera asli"
+        "Didukung · belum diuji"
       ],
       [
         "Sony",
-        "Didukung lewat mode PC Remote, belum diuji dengan kamera asli. Foto yang dijepret selagi kabel lepas tidak diambil (kecuali beberapa model baru di macOS)"
+        "Didukung (mode PC Remote) · belum diuji"
       ],
       [
         "Fujifilm",
-        "Didukung di macOS & Windows untuk model SDK Fujifilm (X-H2/H2S, X-T5/T4/T3, X-S20/S10, X-M5, X-Pro3, GFX), belum diuji · Android belum didukung · foto selagi kabel lepas tidak diambil"
+        "X-H2, X-T5/T4/T3, X-S20/S10, X-M5, X-Pro3, GFX · Mac & Windows · belum diuji"
       ],
       [
         "Merek lain",
-        "OM System / Olympus, Pentax / Ricoh, Leica, Sigma belum bisa lewat kabel — pakai Auto Resize dengan folder kartu memori"
+        "Belum lewat kabel · pakai Auto Resize dari folder kartu"
       ]
     ]
   },
   "requirements": {
-    "intro": "Cek dulu sebelum membeli — atau coba dulu 500 foto gratis untuk memastikan Fotolane jalan di perangkatmu.",
+    "intro": "Coba gratis 500 foto untuk memastikan jalan di perangkatmu.",
     "notes": [
       {
         "title": "Mac",
-        "text": "macOS 12 ke atas, Apple Silicon (M1, M2, M3, M4, …). Mac Intel belum didukung — cek di menu Apple → About This Mac: harus tertulis “Chip Apple M…”, bukan “Processor Intel”."
+        "text": "macOS 12+, Apple Silicon (M1 ke atas). Mac Intel belum didukung."
       },
       {
         "title": "Windows",
-        "text": "Windows 10 / 11, 64-bit, prosesor Intel atau AMD."
+        "text": "Windows 10 / 11, 64-bit."
       },
       {
         "title": "Android",
-        "text": "Android 7.0 ke atas, 64-bit (hampir semua HP / tablet sejak 2017). Kamera USB butuh dukungan USB OTG dan kabel USB-C data maksimal 1 m."
+        "text": "Android 7+, 64-bit. Untuk kamera: USB OTG, kabel maks. 1 m."
       },
       {
         "title": "Prosesor & RAM",
-        "text": "Disarankan 4 core dan RAM 8 GB. Laptop 2 core (mis. Celeron / Pentium / Athlon) tetap bisa, hanya lebih lambat."
+        "text": "Disarankan 4 core dan RAM 8 GB."
       },
       {
         "title": "Penyimpanan",
-        "text": "Sekitar 1 GB untuk app, ditambah ruang untuk foto — hasil kompresi hanya ±2% dari ukuran aslinya."
+        "text": "±1 GB untuk app. Hasil foto hanya ±2% dari aslinya."
       },
       {
         "title": "Kamera USB",
-        "text": "Pakai kabel data (bukan kabel khusus mengisi daya) dan matikan Wi-Fi kamera. Sambungan sering putus? Colok ulang kabel dengan mantap, coba port lain atau tanpa hub, atau ganti kabel; bila tetap gagal, cabut-pasang baterai kamera. Lihat daftar kamera teruji di atas."
+        "text": "Kabel data, Wi-Fi kamera dimatikan. Sering putus? Colok ulang kabel dengan mantap."
       }
     ]
   },
   "changelog": [
     {
+      "version": "1.5.10",
+      "date": "2026-10-14",
+      "items": [
+        "Petunjuk kamera lebih tepat: muncul hanya saat sambungan benar-benar bermasalah."
+      ]
+    },
+    {
       "version": "1.5.9",
       "date": "2026-10-14",
       "items": [
-        "Perpanjang update lewat apps.labstory.id: Pengaturan → Perpanjang update membuka halaman perpanjangan dengan kuncimu sudah terisi. Tempel juga kunci perangkat keduamu supaya satu pembayaran memperpanjang keduanya.",
-        "Perpanjang lebih awal tidak membuang sisa masa update: masa yang baru dimulai setelah masa lama berakhir.",
-        "Semua bantuan kini lewat email hello@labstory.id, termasuk laporan kamera.",
-        "Pengaturan punya tautan ke apps.labstory.id, email bantuan, Syarat & Ketentuan, dan Privasi.",
-        "Kamera USB: petunjuk muncul saat sambungan tersendat atau sering putus."
+        "Perpanjang update langsung di web: kunci terisi otomatis, sekali bayar untuk 2 perangkat.",
+        "Bantuan cukup lewat email."
       ]
     },
     {
       "version": "1.5.8",
       "date": "2026-10-13",
       "items": [
-        "Jendela Aktifkan lebih sederhana: tekan “Buka halaman beli”, bayar dengan QRIS di web, lalu tempel kunci dari halaman pembayaran atau email kuitansi.",
-        "Perangkat kedua tetap gratis: daftarkan kode perangkatnya di halaman pembayaranmu (tautannya ada di email kuitansi).",
-        "Ada pertanyaan sebelum membeli? Tekan “Tanya lewat email”.",
-        "Lisensi yang sudah aktif tetap berlaku seperti biasa."
+        "Beli online: buka halaman beli, bayar QRIS, tempel kunci. Selesai."
       ]
     },
     {
       "version": "1.5.7",
       "date": "2026-10-13",
       "items": [
-        "Kalau Fotolane tertutup tidak normal, atau macet lalu ditutup, saat dibuka lagi Fotolane menawarkan mengirim laporan supaya bisa kami perbaiki. Laporan hanya terkirim kalau kamu setuju, isinya bisa dilihat dulu, dan foto tidak ikut terkirim.",
-        "Jendela Aktifkan menampilkan harga terbaru, termasuk sisa kuota harga perkenalan.",
-        "Siap untuk pembelian online di apps.labstory.id: kode perangkat langsung terisi, kunci dikirim ke email.",
-        "Email berisi kunci untuk dua perangkat bisa ditempel utuh; Fotolane memakai kunci untuk perangkat ini.",
-        "Mac: Cmd+Q menanyakan dulu kalau proses masih berjalan, dan melepas kamera dengan rapi."
-      ]
-    },
-    {
-      "version": "1.5.6",
-      "date": "2026-10-13",
-      "items": [
-        "Lebih ringan di laptop 2 core (mis. AMD Athlon, Intel Celeron / Pentium): proses foto tidak lagi membuat app “Not Responding”.",
-        "Kalau app tertutup karena error, penyebabnya dicatat di folder log supaya bisa ditelusuri."
-      ]
-    },
-    {
-      "version": "1.5.5",
-      "date": "2026-10-13",
-      "items": [
-        "Aktivasi lewat email kini ke hello@labstory.id."
+        "App macet atau tertutup? Kirim laporan dengan satu tombol (atas izinmu) supaya cepat kami perbaiki."
       ]
     }
   ],
   "en": {
     "compatibility": {
       "title": "Tested cameras",
-      "intro": "Tested with real cameras. Other LUMIX, Canon and Nikon models will most likely work, but that isn’t guaranteed; Sony and Fujifilm depend on the manufacturer’s SDK model list. Try it first with the 500-photo trial.",
+      "intro": "Tried with real cameras. Another camera? Try 500 photos free first.",
       "columns": [
         "Brand",
         "Model tested",
@@ -138,7 +120,7 @@
       "rows": [
         [
           "LUMIX",
-          "S5IIX (DC-S5M2X)",
+          "S5IIX",
           "✓",
           "✓",
           "✓"
@@ -152,97 +134,79 @@
         ],
         [
           "Nikon",
-          "Supported, not yet tested with a real camera"
+          "Supported · not yet tested"
         ],
         [
           "Sony",
-          "Supported through PC Remote mode, not yet tested with a real camera. Photos taken while the cable is unplugged are not imported (except some newer models on macOS)"
+          "Supported (PC Remote mode) · not yet tested"
         ],
         [
           "Fujifilm",
-          "Supported on macOS & Windows for Fujifilm SDK models (X-H2/H2S, X-T5/T4/T3, X-S20/S10, X-M5, X-Pro3, GFX), not yet tested · Android not supported yet · photos taken while the cable is unplugged are not imported"
+          "X-H2, X-T5/T4/T3, X-S20/S10, X-M5, X-Pro3, GFX · Mac & Windows · not yet tested"
         ],
         [
           "Other brands",
-          "OM System / Olympus, Pentax / Ricoh, Leica and Sigma can’t connect by cable yet — use Auto Resize with the memory card folder"
+          "Not over cable yet · use Auto Resize on the card folder"
         ]
       ]
     },
     "requirements": {
-      "intro": "Check before you buy — or try 500 photos free to make sure Fotolane runs on your device.",
+      "intro": "Try 500 photos free to make sure it runs on your device.",
       "notes": [
         {
           "title": "Mac",
-          "text": "macOS 12 or later, Apple Silicon (M1, M2, M3, M4, …). Intel Macs are not supported yet — check Apple menu → About This Mac: it must say “Chip Apple M…”, not “Processor Intel”."
+          "text": "macOS 12+, Apple Silicon (M1 or newer). Intel Macs not supported yet."
         },
         {
           "title": "Windows",
-          "text": "Windows 10 / 11, 64-bit, Intel or AMD processor."
+          "text": "Windows 10 / 11, 64-bit."
         },
         {
           "title": "Android",
-          "text": "Android 7.0 or later, 64-bit (almost every phone/tablet since 2017). The USB camera feature needs USB OTG support and a USB-C data cable of 1 m at most."
+          "text": "Android 7+, 64-bit. For the camera: USB OTG, cable up to 1 m."
         },
         {
           "title": "Processor & RAM",
-          "text": "4 cores and 8 GB RAM recommended. 2-core laptops (e.g. Celeron / Pentium / Athlon) still work, just more slowly."
+          "text": "4 cores and 8 GB RAM recommended."
         },
         {
           "title": "Storage",
-          "text": "About 1 GB for the app, plus room for photos — compressed results are only about 2% of the originals."
+          "text": "About 1 GB for the app. Results are only about 2% of the originals."
         },
         {
           "title": "USB camera",
-          "text": "Use a data cable (not a charge-only cable) and turn off the camera’s Wi-Fi. Connection keeps dropping? Re-plug the cable firmly, try another port or no hub, or another cable; if it still fails, take the camera battery out and back in. See the tested cameras above."
+          "text": "Data cable, camera Wi-Fi off. Keeps dropping? Re-plug the cable firmly."
         }
       ]
     },
     "changelog": [
       {
+        "version": "1.5.10",
+        "date": "2026-10-14",
+        "items": [
+          "Smarter camera tips: they only appear when the connection really has a problem."
+        ]
+      },
+      {
         "version": "1.5.9",
         "date": "2026-10-14",
         "items": [
-          "Renew updates at apps.labstory.id: Settings → Renew updates opens the renewal page with your key filled in. Also paste your second device’s key so one payment renews both.",
-          "Renewing early doesn’t waste the time you have left: the new period starts when the old one ends.",
-          "All help now goes by email to hello@labstory.id, camera reports included.",
-          "Settings link to apps.labstory.id, help by email, the Terms, and the Privacy policy.",
-          "USB camera: tips appear when the connection stalls or keeps dropping."
+          "Renew updates right on the web: key filled in, one payment for 2 devices.",
+          "Help is just an email away."
         ]
       },
       {
         "version": "1.5.8",
         "date": "2026-10-13",
         "items": [
-          "A simpler Activate window: press “Open purchase page”, pay with QRIS on the web, then paste the key from the payment page or the receipt email.",
-          "The second device is still free: register its device code on your payment page (the link is in the receipt email).",
-          "Questions before buying? Press “Ask by email”.",
-          "Licenses that are already active keep working as usual."
+          "Buy online: open the buy page, pay by QRIS, paste the key. Done."
         ]
       },
       {
         "version": "1.5.7",
         "date": "2026-10-13",
         "items": [
-          "If Fotolane closed abnormally, or froze and was closed, it offers to send a report when reopened so we can fix it. Reports are only sent if you agree, you can see the contents first, and no photos are included.",
-          "The Activate window shows the latest price, including the remaining introductory-price quota.",
-          "Ready for online purchase at apps.labstory.id: the device code is filled in for you and the key is sent by email.",
-          "An email with keys for two devices can be pasted whole; Fotolane uses the key for this device.",
-          "Mac: Cmd+Q asks first if a job is still running, and releases the camera cleanly."
-        ]
-      },
-      {
-        "version": "1.5.6",
-        "date": "2026-10-13",
-        "items": [
-          "Lighter on 2-core laptops (e.g. AMD Athlon, Intel Celeron / Pentium): photo processing no longer makes the app “Not Responding”.",
-          "If the app closes because of an error, the cause is written to the log folder so it can be traced."
-        ]
-      },
-      {
-        "version": "1.5.5",
-        "date": "2026-10-13",
-        "items": [
-          "Email activation now goes to hello@labstory.id."
+          "App froze or closed? Send a report with one tap (with your OK) so we can fix it fast."
         ]
       }
     ]
