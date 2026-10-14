@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "product": "fotolane",
-  "version": "1.5.8",
-  "releasedAt": "2026-10-13",
+  "version": "1.5.9",
+  "releasedAt": "2026-10-14",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
     "intro": "Diuji dengan kamera asli. Model LUMIX, Canon, dan Nikon lain kemungkinan besar jalan, tapi belum dijamin; Sony dan Fujifilm bergantung pada daftar model SDK pabrikannya. Coba dulu selama masa coba 500 foto.",
@@ -76,6 +76,17 @@
     ]
   },
   "changelog": [
+    {
+      "version": "1.5.9",
+      "date": "2026-10-14",
+      "items": [
+        "Perpanjang update lewat apps.labstory.id: Pengaturan → Perpanjang update membuka halaman perpanjangan dengan kuncimu sudah terisi. Tempel juga kunci perangkat keduamu supaya satu pembayaran memperpanjang keduanya.",
+        "Perpanjang lebih awal tidak membuang sisa masa update: masa yang baru dimulai setelah masa lama berakhir.",
+        "Semua bantuan kini lewat email hello@labstory.id, termasuk laporan kamera.",
+        "Pengaturan punya tautan ke apps.labstory.id, email bantuan, Syarat & Ketentuan, dan Privasi.",
+        "Kamera USB: petunjuk muncul saat sambungan tersendat atau sering putus."
+      ]
+    },
     {
       "version": "1.5.8",
       "date": "2026-10-13",
@@ -187,6 +198,17 @@
       ]
     },
     "changelog": [
+      {
+        "version": "1.5.9",
+        "date": "2026-10-14",
+        "items": [
+          "Renew updates at apps.labstory.id: Settings → Renew updates opens the renewal page with your key filled in. Also paste your second device’s key so one payment renews both.",
+          "Renewing early doesn’t waste the time you have left: the new period starts when the old one ends.",
+          "All help now goes by email to hello@labstory.id, camera reports included.",
+          "Settings link to apps.labstory.id, help by email, the Terms, and the Privacy policy.",
+          "USB camera: tips appear when the connection stalls or keeps dropping."
+        ]
+      },
       {
         "version": "1.5.8",
         "date": "2026-10-13",
