@@ -300,8 +300,10 @@ or iPhone saves HEIC, switch it to JPEG first.
 No. Camera information and photo orientation are preserved.
 
 **Does it need internet?**
-No. Everything is processed on your own device. Internet is only used to check
-for updates.
+To buy or renew and get your key, yes (at apps.labstory.id). Once the key is
+pasted in, Fotolane needs no internet: photos are processed on your own
+device, even at a venue with no signal. Internet is only used again to check
+for updates, and to send a crash report if you agree.
 
 **Does Auto Resize drain the battery?**
 While watching, the app keeps the processor awake so work doesn't stop when the

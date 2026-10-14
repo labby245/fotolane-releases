@@ -301,8 +301,11 @@ atau iPhone menyimpan dalam HEIC, ubah dulu setelannya ke JPEG.
 Tidak. Informasi kamera dan orientasi foto tetap terjaga.
 
 **Perlu internet?**
-Tidak. Semua diproses di perangkatmu sendiri. Internet hanya dipakai saat
-memeriksa pembaruan.
+Untuk membeli atau memperpanjang dan mendapatkan kunci, ya (di
+apps.labstory.id). Setelah kunci ditempel, Fotolane tidak butuh internet:
+foto diproses di perangkatmu sendiri, juga di lokasi acara tanpa sinyal.
+Internet dipakai lagi hanya untuk memeriksa pembaruan, dan untuk mengirim
+laporan crash kalau kamu setujui.
 
 **Auto Resize boros baterai?**
 Selama mengawasi, app menjaga prosesor tetap aktif supaya tidak berhenti saat
