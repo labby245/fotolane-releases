@@ -90,6 +90,11 @@ split into `ganjil` / `genap`.
   connect by cable yet. Use Auto Resize on the memory card folder instead.
 - Models tested with a real camera: see the list below.
 - Press **Stop** before unplugging the cable.
+- **Connection keeps dropping?** Unplug and firmly re-plug the cable (at the
+  camera and at the laptop/tablet/hub), try another port or no hub, or
+  another cable. If it still fails, switch the camera off, take the battery
+  out and back in, then switch it on again. Fotolane shows this tip too when
+  the connection stalls.
 
 ### Tested cameras
 

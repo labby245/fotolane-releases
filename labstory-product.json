@@ -71,7 +71,7 @@
       },
       {
         "title": "Kamera USB",
-        "text": "Pakai kabel data (bukan kabel khusus mengisi daya) dan matikan Wi-Fi kamera. Lihat daftar kamera teruji di atas."
+        "text": "Pakai kabel data (bukan kabel khusus mengisi daya) dan matikan Wi-Fi kamera. Sambungan sering putus? Colok ulang kabel dengan mantap, coba port lain atau tanpa hub, atau ganti kabel; bila tetap gagal, cabut-pasang baterai kamera. Lihat daftar kamera teruji di atas."
       }
     ]
   },
@@ -182,7 +182,7 @@
         },
         {
           "title": "USB camera",
-          "text": "Use a data cable (not a charge-only cable) and turn off the camera’s Wi-Fi. See the tested cameras above."
+          "text": "Use a data cable (not a charge-only cable) and turn off the camera’s Wi-Fi. Connection keeps dropping? Re-plug the cable firmly, try another port or no hub, or another cable; if it still fails, take the camera battery out and back in. See the tested cameras above."
         }
       ]
     },

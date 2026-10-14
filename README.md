@@ -88,6 +88,11 @@ dan dipisah ke `ganjil` / `genap`.
   lewat kabel. Pakai Auto Resize dengan folder kartu memori.
 - Model yang sudah diuji dengan kamera asli: lihat daftar di bawah.
 - Tekan **Berhenti** sebelum mencabut kabel.
+- **Sambungan sering putus?** Cabut lalu colok ulang kabel dengan mantap (di
+  kamera dan di laptop/tablet/hub), coba port lain atau tanpa hub, atau ganti
+  kabel. Kalau tetap gagal, matikan kamera, cabut-pasang baterai, lalu
+  nyalakan lagi. Fotolane juga menampilkan petunjuk ini saat sambungannya
+  tersendat.
 
 ### Kamera yang sudah diuji
 
