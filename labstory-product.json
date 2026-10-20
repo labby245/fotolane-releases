@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "product": "fotolane",
-  "version": "1.5.10",
-  "releasedAt": "2026-10-14",
+  "version": "1.6.0",
+  "releasedAt": "2026-10-19",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
     "intro": "Sudah dicoba dengan kamera asli. Kamera lain? Coba gratis 500 foto dulu.",
@@ -42,7 +42,7 @@
       ],
       [
         "Merek lain",
-        "Belum lewat kabel · pakai Auto Resize dari folder kartu"
+        "Belum lewat kabel · pakai Sesi dari folder kartu"
       ]
     ]
   },
@@ -77,6 +77,14 @@
   },
   "changelog": [
     {
+      "version": "1.6.0",
+      "date": "2026-10-16",
+      "items": [
+        "Sumber baru Kartu SD: colok kartu, foto disalin & dikompres otomatis.",
+        "Folder per rentang nomor kamera; kamera USB menyusulkan foto yang tertinggal."
+      ]
+    },
+    {
       "version": "1.5.10",
       "date": "2026-10-14",
       "items": [
@@ -96,13 +104,6 @@
       "date": "2026-10-13",
       "items": [
         "Beli online: buka halaman beli, bayar QRIS, tempel kunci. Selesai."
-      ]
-    },
-    {
-      "version": "1.5.7",
-      "date": "2026-10-13",
-      "items": [
-        "App macet atau tertutup? Kirim laporan dengan satu tombol (atas izinmu) supaya cepat kami perbaiki."
       ]
     }
   ],
@@ -146,7 +147,7 @@
         ],
         [
           "Other brands",
-          "Not over cable yet · use Auto Resize on the card folder"
+          "Not over cable yet · use a Session on the card folder"
         ]
       ]
     },
@@ -181,6 +182,14 @@
     },
     "changelog": [
       {
+        "version": "1.6.0",
+        "date": "2026-10-16",
+        "items": [
+          "New SD card source: plug a card in, photos are copied & compressed automatically.",
+          "Folders by camera number range; the USB camera fetches photos left behind."
+        ]
+      },
+      {
         "version": "1.5.10",
         "date": "2026-10-14",
         "items": [
@@ -200,13 +209,6 @@
         "date": "2026-10-13",
         "items": [
           "Buy online: open the buy page, pay by QRIS, paste the key. Done."
-        ]
-      },
-      {
-        "version": "1.5.7",
-        "date": "2026-10-13",
-        "items": [
-          "App froze or closed? Send a report with one tap (with your OK) so we can fix it fast."
         ]
       }
     ]

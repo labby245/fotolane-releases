@@ -32,17 +32,27 @@ original photos" when you switch it off yourself (see below).
 
 ---
 
-## 1. Auto Resize — runs by itself during the event
+## 1. Session — runs by itself during the event
 
-<img src="img/en/auto-resize.png" width="620" alt="Auto Resize tab">
+<img src="img/en/auto-resize.png" width="620" alt="Session menu">
 
-Pick a folder, press **Start watching**, and leave it alone. Every new photo that lands
-is resized and sorted into `ganjil` (odd) and `genap` (even) folders.
+Pick a source and a destination folder, press **Start session**, and leave it
+alone. Every new photo is resized and sorted into `ganjil` (odd) and `genap`
+(even) folders.
 
-- Watch **today's date folder** inside the folder you picked, or **the folder
-  itself**.
-- After **2000 photos**, the next folder is created automatically: `ganjil-2`,
-  `ganjil-3`, and so on.
+- Three sources: **SD card**, **USB camera**, or **Selected folder** (a folder
+  you fill yourself).
+- **SD card** (Mac & Windows): while the session runs, every card you plug in
+  (card reader or laptop slot) has **today's** photos copied to `Foto Asli`,
+  then compressed. Plugging the same card in again makes no duplicates, and
+  "you can take it out" shows when it's done. The card is never changed or wiped.
+  Made for high bursts: the camera shoots without a cable at full speed, and
+  you insert the card during a pause.
+- Results are split **by camera number range**, at most 2000 photos per
+  folder: `ganjil 0001-3999`, `ganjil 4000-7999`, and so on. Photos fetched
+  later (say, after the cable came loose) land in their own number range's
+  folder, never in another range's. Photos without a camera number (e.g.
+  named by time) go 2000 per folder in arrival order.
 - Only photos that **arrive after you press Start** are processed. Anything
   already sitting in the folder is skipped.
 - Photos still being copied from the camera are **waited on until the copy
@@ -57,7 +67,7 @@ is resized and sorted into `ganjil` (odd) and `genap` (even) folders.
 over the cable, 6.3 MB becomes 148 KB, then gets split into odd / even.*
 
 Choose the **USB camera** source, connect the camera with a cable, press **Start
-watching**, and shoot as usual. Every shot comes in over the cable, is resized, and is
+session**, and shoot as usual. Every shot comes in over the cable, is resized, and is
 split into `ganjil` / `genap`.
 
 - Originals go into a `Foto Asli` folder; the results go into today's date
@@ -87,9 +97,15 @@ split into `ganjil` / `genap`.
   100RF, 50S II, 50S, 50R, ETERNA 55). Other models (e.g. the X100, X-E and
   X-T30 series) are not on the SDK list, so they aren't supported yet.
 - Other brands (OM System / Olympus, Pentax / Ricoh, Leica, Sigma) can't
-  connect by cable yet. Use Auto Resize on the memory card folder instead.
+  connect by cable yet. Use a Session on the memory card folder instead.
 - Models tested with a real camera: see the list below.
-- Press **Stop** before unplugging the cable.
+- **Long bursts:** while the cable is in, the camera empties its buffer more
+  slowly (LUMIX S5IIX: about 2× longer; that's the camera's own behavior).
+  For high bursts, use the **SD card** source. Photos that weren't sent yet
+  are still taken from the card as soon as the camera is idle and show in the
+  "left behind" line, also after you stop and restart the session on the
+  same day.
+- Press **Stop session** before unplugging the cable.
 - **Connection keeps dropping?** Unplug and firmly re-plug the cable (at the
   camera and at the laptop/tablet/hub), try another port or no hub, or
   another cable. If it still fails, switch the camera off, take the battery
@@ -110,7 +126,7 @@ Your camera isn't listed? Other LUMIX, Canon and Nikon models most likely
 work, because each brand uses the same protocol, but that isn't guaranteed.
 Sony and Fujifilm depend on the model lists in their makers' SDKs (see
 above). **Try it during the trial (500 photos)** before you buy. Once your camera connects, tap **Camera working? Let us know** under the
-Auto Resize status and we'll add it to this list. If it won't connect, tap
+Session status and we'll add it to this list. If it won't connect, tap
 **Camera not connecting? Let us know**.
 
 ## 2. Photos — process a batch at once
@@ -118,7 +134,8 @@ Auto Resize status and we'll add it to this list. If it won't connect, tap
 <img src="img/en/foto.png" width="620" alt="Photo tab">
 
 For photos you have already collected. Pick one file or one folder, press
-**Process photos**, done. Odd/even splitting is available here too.
+**Process photos**, done. Odd/even splitting is available here too, and the
+results are split into folders of 2000 photos as well.
 
 When it finishes, a summary shows how many photos succeeded and how much space
 was saved. If any file failed (a corrupt one, say), just press **Retry** —
@@ -140,23 +157,25 @@ only that file is processed again.
   Settings.
 - **Dark mode** and a choice of **Indonesian / English**, right at the top of
   the screen.
+- **Display size 80–125%** in Settings (or ⌘/Ctrl + / − / 0) for short laptop
+  screens, and a sidebar you can hide (Mac & Windows).
 
 ---
 
 ## What the output looks like
 
-With **Auto Resize**, results are written inside the source folder:
+With a **Session**, results are written inside the source folder:
 
 ```
 Event Folder/
 └── 2026-09-23/              ← date folder, picked automatically
     ├── DSC_0011.jpg         ← original, untouched
     ├── DSC_0012.jpg
-    ├── ganjil/              ← max 2000 photos ("odd")
+    ├── ganjil 0001-3999/    ← "odd", numbers 0001–3999: max 2000 photos
     │   ├── DSC_0011.jpg
     │   └── DSC_0013.jpg
-    ├── ganjil-2/            ← created automatically when "ganjil" fills up
-    └── genap/               ← "even"
+    ├── ganjil 4000-7999/    ← the next numbers
+    └── genap 0001-3999/     ← "even"
         ├── DSC_0012.jpg
         └── DSC_0014.jpg
 ```
@@ -167,7 +186,7 @@ With the **Photos** tab, results go into a `resize/` folder beside the source:
 Photo Folder/
 ├── DSC_0011.jpg
 └── resize/
-    ├── ganjil/
+    ├── ganjil/              ← max 2000 photos, then ganjil-2, ganjil-3, …
     └── genap/
 ```
 
@@ -237,7 +256,7 @@ On macOS 14 or older, right-click the app icon and choose **Open** instead.
 | | |
 |---|---|
 | **Photos** & **Video** tabs | Free forever |
-| **Auto Resize** | Free for the **first 500 photos** |
+| **Session** | Free for the **first 500 photos** |
 | Full license | **Rp 400,000, one-time**, for **2 devices** (e.g. a laptop + a phone/tablet), including **1 year of updates** |
 | Update renewal | **Rp 150,000 per year**, optional. Without it, the version you have keeps working forever |
 
@@ -305,7 +324,7 @@ pasted in, Fotolane needs no internet: photos are processed on your own
 device, even at a venue with no signal. Internet is only used again to check
 for updates, and to send a crash report if you agree.
 
-**Does Auto Resize drain the battery?**
+**Does a Session drain the battery?**
 While watching, the app keeps the processor awake so work doesn't stop when the
 screen turns off — roughly a few percent of battery per day. What really drains
 the battery is leaving the screen on, which is why that option is off by

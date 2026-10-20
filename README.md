@@ -30,17 +30,27 @@ folder baru di sampingnya. Satu-satunya pengecualian adalah opsi Kamera USB
 
 ---
 
-## 1. Auto Resize — jalan sendiri selama acara
+## 1. Sesi — jalan sendiri selama acara
 
-<img src="img/auto-resize.png" width="620" alt="Tab Auto Resize">
+<img src="img/auto-resize.png" width="620" alt="Menu Sesi">
 
-Pilih folder, tekan **Mulai mengawasi**, lalu biarkan. Setiap foto baru yang masuk
-langsung diperkecil dan dipisah ke folder `ganjil` dan `genap`.
+Pilih sumber dan folder tujuan, tekan **Mulai sesi**, lalu biarkan. Setiap foto
+baru langsung diperkecil dan dipisah ke folder `ganjil` dan `genap`.
 
-- Bisa mengawasi **folder tanggal hari ini** di dalam folder pilihanmu, atau
-  **langsung folder itu sendiri**.
-- Setelah **2000 foto**, folder lanjutan dibuat otomatis: `ganjil-2`,
-  `ganjil-3`, dan seterusnya.
+- Tiga sumber: **Kartu SD**, **Kamera USB**, atau **Folder terpilih** (folder
+  yang kamu isi sendiri).
+- **Kartu SD** (Mac & Windows): selama sesi berjalan, setiap kartu yang
+  dicolok (card reader atau slot laptop) disalin foto **hari ini**-nya ke
+  `Foto Asli`, lalu dikompres. Kartu yang sama dicolok lagi tidak membuat
+  foto dobel, dan setelah selesai muncul "boleh dicabut". Kartu tidak pernah
+  diubah atau dihapus. Cocok untuk burst tinggi: kamera memotret tanpa kabel
+  dengan kecepatan penuh, kartu dimasukkan saat jeda.
+- Folder hasil dibagi **per rentang nomor kamera**, maksimal 2000 foto:
+  `ganjil 0001-3999`, `ganjil 4000-7999`, dan seterusnya. Foto yang
+  disusulkan belakangan (misalnya setelah kabel sempat lepas) masuk folder
+  rentang nomornya sendiri, tidak pernah nyasar ke rentang lain. Foto tanpa
+  nomor kamera (mis. nama berformat jam) dibagi per 2000 menurut urutan
+  datang.
 - Hanya foto yang **masuk setelah tombol Mulai ditekan** yang diproses. Foto
   lama yang sudah ada di folder itu dilewati.
 - Foto yang masih separuh tersalin dari kamera **ditunggu sampai selesai**,
@@ -54,7 +64,7 @@ langsung diperkecil dan dipisah ke folder `ganjil` dan `genap`.
 *Sesi nyata dengan LUMIX S5IIX: setiap jepretan masuk lewat kabel, 6,3 MB
 menjadi 148 KB, lalu terpilah ganjil / genap.*
 
-Pilih sumber **Kamera USB**, colok kamera dengan kabel, tekan **Mulai mengawasi**, lalu
+Pilih sumber **Kamera USB**, colok kamera dengan kabel, tekan **Mulai sesi**, lalu
 memotret seperti biasa. Setiap jepretan langsung masuk lewat kabel, diperkecil,
 dan dipisah ke `ganjil` / `genap`.
 
@@ -85,9 +95,15 @@ dan dipisah ke `ganjil` / `genap`.
 - Fujifilm hanya untuk model yang didukung SDK Fujifilm: X-H2, X-H2S, X-T5, X-T4, X-T3, X-S20, X-S10, X-M5, X-Pro3, dan GFX (100 II, 100S II, 100S, 100, 100RF, 50S II, 50S, 50R, ETERNA 55). Model lain
   (mis. seri X100, X-E, X-T30) tidak ada di daftar SDK, jadi belum didukung.
 - Merek lain (OM System / Olympus, Pentax / Ricoh, Leica, Sigma) belum bisa
-  lewat kabel. Pakai Auto Resize dengan folder kartu memori.
+  lewat kabel. Pakai Sesi dengan folder kartu memori.
 - Model yang sudah diuji dengan kamera asli: lihat daftar di bawah.
-- Tekan **Berhenti** sebelum mencabut kabel.
+- **Burst panjang:** saat tersambung kabel, kamera mengosongkan buffer lebih
+  lambat (LUMIX S5IIX: ±2× lebih lama, ini perilaku kamera sendiri). Untuk
+  burst tinggi, pakai sumber **Kartu SD**. Foto yang belum terkirim tetap
+  diambil dari kartu begitu kamera senggang dan tampil di baris
+  "Tertinggal", juga setelah sesi dihentikan lalu dimulai lagi di hari yang
+  sama.
+- Tekan **Hentikan sesi** sebelum mencabut kabel.
 - **Sambungan sering putus?** Cabut lalu colok ulang kabel dengan mantap (di
   kamera dan di laptop/tablet/hub), coba port lain atau tanpa hub, atau ganti
   kabel. Kalau tetap gagal, matikan kamera, cabut-pasang baterai, lalu
@@ -108,7 +124,7 @@ Kameramu belum ada di daftar? Model LUMIX, Canon, dan Nikon lain kemungkinan
 besar jalan karena satu merek memakai protokol yang sama, tapi belum
 dijamin. Sony dan Fujifilm bergantung pada daftar model SDK pabrikannya (lihat
 di atas). **Coba dulu selama masa coba (500 foto)** sebelum membeli. Setelah kameramu tersambung, tekan
-**Kamera ini lancar? Kabari kami** di bawah status Auto Resize, dan kameramu
+**Kamera ini lancar? Kabari kami** di bawah status Sesi, dan kameramu
 kami tambahkan ke daftar ini. Kalau tidak mau tersambung, tekan **Kamera
 tidak tersambung? Kabari kami**.
 
@@ -117,7 +133,8 @@ tidak tersambung? Kabari kami**.
 <img src="img/foto.png" width="620" alt="Tab Foto">
 
 Untuk foto yang sudah terkumpul. Pilih satu file atau satu folder, tekan
-**Proses foto**, selesai. Pemisahan ganjil/genap juga tersedia di sini.
+**Proses foto**, selesai. Pemisahan ganjil/genap juga tersedia di sini, dan
+hasilnya juga dipecah per 2000 foto per folder.
 
 Setelah selesai, ringkasan menunjukkan berapa foto yang berhasil dan berapa
 ruang yang dihemat. Kalau ada file yang gagal (misalnya rusak), cukup tekan
@@ -138,23 +155,26 @@ ruang yang dihemat. Kalau ada file yang gagal (misalnya rusak), cukup tekan
   Pengaturan.
 - **Mode gelap** dan pilihan **bahasa Indonesia / English**, langsung dari
   bagian atas layar.
+- **Ukuran tampilan 80–125%** di Pengaturan (atau ⌘/Ctrl + / − / 0) untuk
+  layar laptop yang pendek, dan menu samping yang bisa disembunyikan (Mac &
+  Windows).
 
 ---
 
 ## Struktur folder hasil
 
-Dengan **Auto Resize**, hasil ditulis di dalam folder sumbernya:
+Dengan **Sesi**, hasil ditulis di dalam folder sumbernya:
 
 ```
 Folder Acara/
 └── 2026-09-23/              ← folder tanggal (dipilih otomatis)
     ├── DSC_0011.jpg         ← foto asli, tidak disentuh
     ├── DSC_0012.jpg
-    ├── ganjil/              ← maks 2000 foto
+    ├── ganjil 0001-3999/    ← nomor 0001–3999: maks 2000 foto
     │   ├── DSC_0011.jpg
     │   └── DSC_0013.jpg
-    ├── ganjil-2/            ← dibuat otomatis saat "ganjil" penuh
-    └── genap/
+    ├── ganjil 4000-7999/    ← nomor berikutnya
+    └── genap 0001-3999/
         ├── DSC_0012.jpg
         └── DSC_0014.jpg
 ```
@@ -165,7 +185,7 @@ Dengan tab **Foto**, hasil masuk ke folder `resize/` di samping foto sumber:
 Folder Foto/
 ├── DSC_0011.jpg
 └── resize/
-    ├── ganjil/
+    ├── ganjil/              ← maks 2000 foto, lalu ganjil-2, ganjil-3, …
     └── genap/
 ```
 
@@ -236,7 +256,7 @@ Tetap jalankan**.
 | | |
 |---|---|
 | Tab **Foto** & **Video** | Gratis selamanya |
-| **Auto Resize** | Gratis untuk **500 foto pertama** |
+| **Sesi** | Gratis untuk **500 foto pertama** |
 | Lisensi penuh | **Rp 400.000, sekali bayar**, untuk **2 perangkat** (mis. laptop + HP/tablet), termasuk **update 1 tahun** |
 | Perpanjangan update | **Rp 150.000 per tahun**, opsional. Tanpa perpanjangan, versi yang sudah kamu punya tetap jalan selamanya |
 
@@ -307,7 +327,7 @@ foto diproses di perangkatmu sendiri, juga di lokasi acara tanpa sinyal.
 Internet dipakai lagi hanya untuk memeriksa pembaruan, dan untuk mengirim
 laporan crash kalau kamu setujui.
 
-**Auto Resize boros baterai?**
+**Sesi boros baterai?**
 Selama mengawasi, app menjaga prosesor tetap aktif supaya tidak berhenti saat
 layar mati — perkiraan beberapa persen baterai per hari. Yang jauh lebih boros
 adalah layar yang dibiarkan menyala, jadi pilihan itu sengaja dimatikan secara
