@@ -42,17 +42,21 @@ alone. Every new photo is resized and sorted into `ganjil` (odd) and `genap`
 
 - Three sources: **SD card**, **USB camera**, or **Selected folder** (a folder
   you fill yourself).
-- **SD card** (Mac & Windows): while the session runs, every card you plug in
-  (card reader or laptop slot) has **today's** photos copied to `Foto Asli`,
-  then compressed. Plugging the same card in again makes no duplicates, and
-  "you can take it out" shows when it's done. The card is never changed or wiped.
-  Made for high bursts: the camera shoots without a cable at full speed, and
-  you insert the card during a pause.
-- Results are split **by camera number range**, at most 2000 photos per
-  folder: `ganjil 0001-3999`, `ganjil 4000-7999`, and so on. Photos fetched
-  later (say, after the cable came loose) land in their own number range's
-  folder, never in another range's. Photos without a camera number (e.g.
-  named by time) go 2000 per folder in arrival order.
+- **SD card** (Mac, Windows, Android with a USB-C card reader): while the
+  session runs, every card you plug in has **today's** photos copied, then
+  compressed. Each card gets its own folder (`Kartu SD 1`, `Kartu SD 2`, …),
+  so the same photo number from another card never clashes. The same card
+  plugged in again goes back to its folder with no duplicates; a formatted
+  card gets a new folder. "You can take it out" shows when it's done. The
+  card is never changed or wiped. Made for high bursts: the camera shoots
+  without a cable at full speed, and you insert the card during a pause.
+- Results go into `ganjil 1`, `ganjil 2`, `ganjil 3` (odd; `genap` is even),
+  at most 2000 photos per folder. The **camera's photo number** decides the
+  folder: folder 1 holds numbers 0001–3999, folder 2 4000–7999, folder 3
+  8000–9999. So photos fetched later (say, after the cable came loose) still
+  land in their own folder, and folders you already uploaded never change.
+  Photos without a camera number (e.g. named by time) go 2000 per folder in
+  arrival order.
 - Only photos that **arrive after you press Start** are processed. Anything
   already sitting in the folder is skipped.
 - Photos still being copied from the camera are **waited on until the copy
@@ -164,21 +168,25 @@ only that file is processed again.
 
 ## What the output looks like
 
-With a **Session**, results are written inside the source folder:
+With a **Session**, results go into today's date folder. **SD card** source:
 
 ```
 Event Folder/
-└── 2026-09-23/              ← date folder, picked automatically
-    ├── DSC_0011.jpg         ← original, untouched
-    ├── DSC_0012.jpg
-    ├── ganjil 0001-3999/    ← "odd", numbers 0001–3999: max 2000 photos
-    │   ├── DSC_0011.jpg
-    │   └── DSC_0013.jpg
-    ├── ganjil 4000-7999/    ← the next numbers
-    └── genap 0001-3999/     ← "even"
-        ├── DSC_0012.jpg
-        └── DSC_0014.jpg
+└── 2026-10-20/              ← date folder, created automatically
+    ├── Kartu SD 1/
+    │   ├── Foto Asli/       ← full copies from the card
+    │   ├── ganjil 1/        ← "odd", photo numbers 0001–3999: max 2000 photos
+    │   ├── genap 1/         ← "even"
+    │   └── ganjil 2/        ← numbers 4000–7999
+    └── Kartu SD 2/          ← the next card (another camera / formatted card)
+        ├── Foto Asli/
+        ├── ganjil 1/
+        └── genap 1/
 ```
+
+**USB camera** source: `Foto Asli`, `ganjil 1`, `genap 1`, … right in the
+date folder. **Selected folder** source: `ganjil 1`, `genap 1`, … inside
+that folder.
 
 With the **Photos** tab, results go into a `resize/` folder beside the source:
 

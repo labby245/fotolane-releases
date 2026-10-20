@@ -39,18 +39,21 @@ baru langsung diperkecil dan dipisah ke folder `ganjil` dan `genap`.
 
 - Tiga sumber: **Kartu SD**, **Kamera USB**, atau **Folder terpilih** (folder
   yang kamu isi sendiri).
-- **Kartu SD** (Mac & Windows): selama sesi berjalan, setiap kartu yang
-  dicolok (card reader atau slot laptop) disalin foto **hari ini**-nya ke
-  `Foto Asli`, lalu dikompres. Kartu yang sama dicolok lagi tidak membuat
-  foto dobel, dan setelah selesai muncul "boleh dicabut". Kartu tidak pernah
-  diubah atau dihapus. Cocok untuk burst tinggi: kamera memotret tanpa kabel
-  dengan kecepatan penuh, kartu dimasukkan saat jeda.
-- Folder hasil dibagi **per rentang nomor kamera**, maksimal 2000 foto:
-  `ganjil 0001-3999`, `ganjil 4000-7999`, dan seterusnya. Foto yang
-  disusulkan belakangan (misalnya setelah kabel sempat lepas) masuk folder
-  rentang nomornya sendiri, tidak pernah nyasar ke rentang lain. Foto tanpa
-  nomor kamera (mis. nama berformat jam) dibagi per 2000 menurut urutan
-  datang.
+- **Kartu SD** (Mac, Windows, Android lewat card reader USB-C): selama sesi
+  berjalan, setiap kartu yang dicolok disalin foto **hari ini**-nya, lalu
+  dikompres. Tiap kartu punya foldernya sendiri (`Kartu SD 1`, `Kartu SD 2`,
+  …), jadi nomor foto yang sama dari kartu lain tidak bertabrakan. Kartu yang
+  sama dicolok lagi kembali ke foldernya tanpa foto dobel; kartu yang sudah
+  diformat dapat folder baru. Setelah selesai muncul "boleh dicabut". Kartu
+  tidak pernah diubah atau dihapus. Cocok untuk burst tinggi: kamera memotret
+  tanpa kabel dengan kecepatan penuh, kartu dimasukkan saat jeda.
+- Hasil dibagi ke `ganjil 1`, `ganjil 2`, `ganjil 3` (dan `genap` yang sama),
+  maksimal 2000 foto per folder. Isinya ditentukan **nomor foto kamera**:
+  folder 1 untuk nomor 0001–3999, folder 2 untuk 4000–7999, folder 3 untuk
+  8000–9999. Jadi foto yang disusulkan belakangan (misalnya setelah kabel
+  sempat lepas) tetap masuk foldernya sendiri, dan folder yang sudah
+  diunggah tidak berubah. Foto tanpa nomor kamera (mis. nama berformat jam)
+  dibagi per 2000 menurut urutan datang.
 - Hanya foto yang **masuk setelah tombol Mulai ditekan** yang diproses. Foto
   lama yang sudah ada di folder itu dilewati.
 - Foto yang masih separuh tersalin dari kamera **ditunggu sampai selesai**,
@@ -163,21 +166,25 @@ ruang yang dihemat. Kalau ada file yang gagal (misalnya rusak), cukup tekan
 
 ## Struktur folder hasil
 
-Dengan **Sesi**, hasil ditulis di dalam folder sumbernya:
+Dengan **Sesi**, hasil ditulis di folder tanggal hari ini. Sumber **Kartu SD**:
 
 ```
 Folder Acara/
-└── 2026-09-23/              ← folder tanggal (dipilih otomatis)
-    ├── DSC_0011.jpg         ← foto asli, tidak disentuh
-    ├── DSC_0012.jpg
-    ├── ganjil 0001-3999/    ← nomor 0001–3999: maks 2000 foto
-    │   ├── DSC_0011.jpg
-    │   └── DSC_0013.jpg
-    ├── ganjil 4000-7999/    ← nomor berikutnya
-    └── genap 0001-3999/
-        ├── DSC_0012.jpg
-        └── DSC_0014.jpg
+└── 2026-10-20/              ← folder tanggal (dibuat otomatis)
+    ├── Kartu SD 1/
+    │   ├── Foto Asli/       ← salinan utuh dari kartu
+    │   ├── ganjil 1/        ← nomor foto 0001–3999: maks 2000 foto
+    │   ├── genap 1/
+    │   └── ganjil 2/        ← nomor 4000–7999
+    └── Kartu SD 2/          ← kartu berikutnya (kamera lain / kartu diformat)
+        ├── Foto Asli/
+        ├── ganjil 1/
+        └── genap 1/
 ```
+
+Sumber **Kamera USB**: `Foto Asli`, `ganjil 1`, `genap 1`, … langsung di
+folder tanggal. Sumber **Folder terpilih**: `ganjil 1`, `genap 1`, … di
+dalam folder itu.
 
 Dengan tab **Foto**, hasil masuk ke folder `resize/` di samping foto sumber:
 

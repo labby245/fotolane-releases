@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "product": "fotolane",
-  "version": "1.6.0",
-  "releasedAt": "2026-10-19",
+  "version": "1.6.1",
+  "releasedAt": "2026-10-20",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
     "intro": "Sudah dicoba dengan kamera asli. Kamera lain? Coba gratis 500 foto dulu.",
@@ -42,7 +42,7 @@
       ],
       [
         "Merek lain",
-        "Belum lewat kabel · pakai Sesi dari folder kartu"
+        "Belum lewat kabel · pakai sumber Kartu SD"
       ]
     ]
   },
@@ -59,7 +59,7 @@
       },
       {
         "title": "Android",
-        "text": "Android 7+, 64-bit. Untuk kamera: USB OTG, kabel maks. 1 m."
+        "text": "Android 7+, 64-bit. Untuk kamera atau card reader: USB OTG, kabel maks. 1 m."
       },
       {
         "title": "Prosesor & RAM",
@@ -77,8 +77,16 @@
   },
   "changelog": [
     {
+      "version": "1.6.1",
+      "date": "2026-10-20",
+      "items": [
+        "Kartu SD kini juga di Android, lewat card reader USB-C.",
+        "Satu folder per kartu; nama hasil jadi ganjil 1, genap 1, …"
+      ]
+    },
+    {
       "version": "1.6.0",
-      "date": "2026-10-16",
+      "date": "2026-10-19",
       "items": [
         "Sumber baru Kartu SD: colok kartu, foto disalin & dikompres otomatis.",
         "Folder per rentang nomor kamera; kamera USB menyusulkan foto yang tertinggal."
@@ -97,13 +105,6 @@
       "items": [
         "Perpanjang update langsung di web: kunci terisi otomatis, sekali bayar untuk 2 perangkat.",
         "Bantuan cukup lewat email."
-      ]
-    },
-    {
-      "version": "1.5.8",
-      "date": "2026-10-13",
-      "items": [
-        "Beli online: buka halaman beli, bayar QRIS, tempel kunci. Selesai."
       ]
     }
   ],
@@ -147,7 +148,7 @@
         ],
         [
           "Other brands",
-          "Not over cable yet · use a Session on the card folder"
+          "Not over cable yet · use the SD card source"
         ]
       ]
     },
@@ -164,7 +165,7 @@
         },
         {
           "title": "Android",
-          "text": "Android 7+, 64-bit. For the camera: USB OTG, cable up to 1 m."
+          "text": "Android 7+, 64-bit. For the camera or a card reader: USB OTG, cable up to 1 m."
         },
         {
           "title": "Processor & RAM",
@@ -182,8 +183,16 @@
     },
     "changelog": [
       {
+        "version": "1.6.1",
+        "date": "2026-10-20",
+        "items": [
+          "SD card now on Android too, with a USB-C card reader.",
+          "One folder per card; results named ganjil 1, genap 1, …"
+        ]
+      },
+      {
         "version": "1.6.0",
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "items": [
           "New SD card source: plug a card in, photos are copied & compressed automatically.",
           "Folders by camera number range; the USB camera fetches photos left behind."
@@ -202,13 +211,6 @@
         "items": [
           "Renew updates right on the web: key filled in, one payment for 2 devices.",
           "Help is just an email away."
-        ]
-      },
-      {
-        "version": "1.5.8",
-        "date": "2026-10-13",
-        "items": [
-          "Buy online: open the buy page, pay by QRIS, paste the key. Done."
         ]
       }
     ]
