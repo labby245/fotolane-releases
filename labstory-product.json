@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "product": "fotolane",
-  "version": "1.6.1",
-  "releasedAt": "2026-10-20",
+  "version": "1.6.2",
+  "releasedAt": "2026-11-15",
   "compatibility": {
     "title": "Kamera yang sudah diuji",
     "intro": "Sudah dicoba dengan kamera asli. Kamera lain? Coba gratis 500 foto dulu.",
@@ -76,6 +76,14 @@
     ]
   },
   "changelog": [
+    {
+      "version": "1.6.2",
+      "date": "2026-11-15",
+      "items": [
+        "Kartu SD: hemat disk laptop, foto asli cukup di kartu, yang disimpan hanya hasil kompres.",
+        "Laptop tetap lancar dipakai app lain selama sesi."
+      ]
+    },
     {
       "version": "1.6.1",
       "date": "2026-10-20",
@@ -182,6 +190,14 @@
       ]
     },
     "changelog": [
+      {
+        "version": "1.6.2",
+        "date": "2026-11-15",
+        "items": [
+          "SD card: save laptop space, originals stay on the card, only the compressed results are kept.",
+          "The laptop stays smooth for other apps during a session."
+        ]
+      },
       {
         "version": "1.6.1",
         "date": "2026-10-20",
